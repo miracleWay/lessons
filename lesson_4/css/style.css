@@ -1,0 +1,111 @@
+@import url("reset.css");
+
+
+/* Стилізація по класу */
+.header-list {
+    color: brown;
+}
+
+/* Стилізація по тегу */
+
+p {
+    color: blue;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+h2 {
+    color: deeppink;
+}
+
+/* Звернення по послідовності */
+
+.intro-list > ol > li {
+    color: yellow;
+}
+
+.general > ul > li {
+    color: dimgrey;
+}
+
+/* Експеремент якщо пропустити вкладеність */
+
+.types > li {
+    color: forestgreen;
+}
+
+/* Перевірка НЕ РЕКОМЕНДОВАНОГО important при рівнозначних зверненнях */
+
+.target > ul > li {
+    color: red !important;
+}
+
+.target > ul > li {
+    color: gold;
+}
+
+/* Спосіб звернення (перераховування) до багатьох селекторів
+До тегів P, класи яких не вказані, буде примінятись стиль 
+застосований до тегів P */
+
+.brain, .brain-text {
+    color:coral;
+}
+
+#super {
+    color: sandybrown;
+}
+
+/* Звернення по атрибуту */
+
+[class*="bute"] {
+    color: chartreuse;
+}
+
+/* Звернення лише до об'єкта, який має обидва класи
+Якщо об'єкт має лише один з двох вказаних класів - 
+стилі не будуть застосовані */
+
+.problems-text.lesson {
+    color: turquoise;
+}
+
+/* Звертається до всіх тегів P після об'єкту 
+з класом history на тому ж рівні вкладеності  */
+
+.history ~ p {
+    color: red;
+}
+
+/* Звертається до безпосередньогох тегу P після об'єкту 
+з класом history на тому ж рівні вкладеності  */
+
+.history + p {
+    color: yellow;
+}
+
+/* Всі БЕЗПОСЕРЕДНІ теги Р */
+
+.history > p {
+    color: blueviolet;
+}
+
+/* Всі теги Р */
+
+.history p {
+    color: blueviolet;
+}
+
+/* Всі об'єкти з класом content в середині об`єктів з класом using */
+
+.using .content {
+    color: chartreuse;
+}
+
+/* Всі об'єкти тегу footer */
+
+footer * {
+    color: darkorchid;
+}
