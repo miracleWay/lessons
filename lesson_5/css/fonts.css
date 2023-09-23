@@ -1,0 +1,62 @@
+/* Шрифти для макету з фігми */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+/* Підключення вручну */
+
+@font-face {
+    font-family: "Causten";
+    src: 
+        url("../fonts/Causten-Regular.woff2") format("woff2"),
+        url("../fonts/Causten-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: 
+        url("../fonts/Causten-Light.woff2") format("woff2"),
+        url("../fonts/Causten-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: 
+        url("../fonts/Causten-Medium.woff2") format("woff2"),
+        url("../fonts/Causten-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: 
+        url("../fonts/Causten-SemiBold.woff2") format("woff2"),
+        url("../fonts/Causten-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: 
+        url("../fonts/Causten-Bold.woff2") format("woff2"),
+        url("../fonts/Causten-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Шрифти для основної статті */
+
+@import url("https://fonts.googleapis.com/css?family=Croissant+One:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&display=swap");
