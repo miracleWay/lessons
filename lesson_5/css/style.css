@@ -85,7 +85,7 @@ h3 {
 }
 
 .figma h3 {
-    font-family: "Inter";
+    font-family: "Poppins";
     color: #6B77E5;
     font-size: 20px;
     font-weight: 600;
@@ -94,10 +94,13 @@ h3 {
 }
 
 .figma p {
+    font-family: "Inter";
     color: #7D7D7D;
     font-size: 18px;
-    line-height: 1.46;
+    line-height: 1.46;s
 }
+
+
 
 
 .project-info h2 {
@@ -115,3 +118,9 @@ h3 {
     line-height: 1.46;
 }
 
+.project-list {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    color: #7D7D7D;
+}
