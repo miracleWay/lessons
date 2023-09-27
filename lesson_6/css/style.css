@@ -1,0 +1,132 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+/* МАКЕТ №1 */
+
+.limited-block {
+    width: 693px;
+    margin: 0 auto;
+}
+
+.first-part {
+    margin-bottom: 39px;
+}
+
+.meet-img {
+    margin-bottom: 24px;
+}
+
+
+.bussiness-block h1 {
+        color: #37393F;
+        font-family: "Poppins";
+        font-size: 30px;
+        line-height: 1.27; 
+        margin-bottom: 19px;
+        text-transform: capitalize;
+}
+
+.bussiness-block p {
+    color: #7D7D7D;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 1.46;
+    margin-bottom: 42px;
+}
+
+
+.main-text h2 {
+    font-family: "Poppins";
+    color: #6B77E5;
+    font-size: 20px;
+    line-height: 1.27; 
+    margin-bottom: 12px;
+}
+
+.main-text p {
+    color: #7D7D7D;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 1.46;
+}
+
+.benefits-text {
+    display: inline-block;
+    width: 313px;
+    margin-left: 13px;
+}
+
+.benefits-text h2 {
+    font-family: "Poppins";
+    font-size: 25px;
+    margin-bottom: 26px;
+}
+
+.benefits-text h3 {
+    color: #40DDB6;
+    font-family: "Poppins";
+    font-size: 20px;
+    line-height: 1.27; 
+    margin-bottom: 30px;
+}
+
+.benefits-text ul>li {
+    color: #7D7D7D;
+    font-family: "Inter";
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* МАКЕТ №2 */
+
+.jewerly-part {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 10px 10px 10px rgb(16, 242, 152);
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 100px;
+}
+
+
+.jewerly-block {
+    width: 1169px;
+    margin: 0 auto;
+}
+
+
+.content-block {
+    width: 563px;
+    display: inline-block;
+    margin: 18px 38px 21px 0;
+}
+
+.content-block h3 {
+    color: #D06B00;
+    font-family: "Inter";
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content-block h2 {
+    color: #0E333D;
+    font-family: "DM Serif Text";
+    font-size: 59px;
+    line-height: 1.46;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.content-block p {
+    color: #474747;
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.woman-img {
+    margin-right: 22px;
+}
