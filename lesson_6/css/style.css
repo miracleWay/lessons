@@ -91,51 +91,47 @@
 }
 
 
-.jewerly-container {
+
+.background {
     background-color: #FFF9F4;
 }
-
-.jewerly-block {
-    width: 1169px;
-    margin: 0 auto;
+.block {
+    margin-top: 50px;
+    max-width: 1169px;
+    margin: 50px auto;
     font-size: 0;
 }
-
-
-.content-block {
-    width: 563px;
+.text {
     display: inline-block;
-    margin: 18px 38px 0 0;
+    width: 563px;
+    margin-right: 38px;
 }
-
-.content-block h3 {
+.text h2 {
+    font-family: "Inter", sans-serif;
     color: #D06B00;
-    font-family: "Inter";
     font-size: 28px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
-
-.content-block h2 {
+.text h1 {
     color: #0E333D;
     font-family: "DM Serif Text";
     font-size: 59px;
     line-height: 1.46;
-    text-transform: capitalize;
     margin-bottom: 25px;
 }
-
-.content-block p {
+.text p {
     color: #474747;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 1.8;
 }
-
-.woman-img {
+.pictures {
+    display: inline-block;
+    vertical-align: top;
+}
+.woman {
     margin-right: 22px;
 }
-
 
 
 
