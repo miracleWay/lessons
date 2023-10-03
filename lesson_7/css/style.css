@@ -1,0 +1,330 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+/* МАКЕТ */
+
+.block {
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+}
+h1,h2,h3 {
+    font-family: "Poppins", serif;
+}
+.title-box {
+    max-width: 296px;
+    margin: 0 auto;
+    text-align: center;
+}
+.title-box h5 {
+    display: inline-block;
+    color: #37393F;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+.title-box h1 {
+    color: #37393F;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+.squad {
+    display: inline-block;
+    background-color: #40DDB6;
+    width: 12px;
+    height: 12px;
+}
+.icons-block {
+    margin-bottom: 100px;
+}
+.icons-block h2 {
+    color: #37393F;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+.icons-block p {
+    font-size: 18px;
+    line-height: 1.46;
+}
+.icons-block h3 {
+    margin-top: 43px;
+    color: #37393F;
+    font-size: 30px;
+    font-weight: 700;
+}
+.photo-block {
+    margin-bottom: 126px;
+}
+.photo-block h2 {
+    color: #37393F;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+.photo-block p {
+    font-size: 18px;
+    line-height: 1.46;
+}
+.photo-block h3 {
+    margin-top: 24px;
+    color: #37393F;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.fonts-block h2 {
+    color: #37393F;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.block a {
+    color: #40DDB6;
+    font-weight: 400;
+}
+
+/* МАКЕТ №2 */
+
+.project-block {
+    max-width: 830px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 1.46;
+}
+
+.project-block p {
+    margin-bottom: 35px;
+}
+
+.project-block h2 {
+    font-family: "Poppins", serif;
+    color: #37393F;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.project-block ul, ol {
+    margin-bottom: 35px;
+    margin-left: 16px;
+    font-weight: 500;
+}
+
+.project-block li {
+    margin-bottom: 35px;
+}
+
+/* МАКЕТ №3 */
+
+
+.clothing-block {
+    max-width: 1240px;
+    margin: 100px auto;
+    font-family: "Causten", sans-serif;
+    color: #807D7E;
+    font-size: 20px;
+    line-height: 1.67;
+    padding: 0 21px;
+}
+.main-title-block {
+    margin-bottom: 30px;
+    margin-left: -21px;
+}
+.main-title-block h2 {
+    display: inline-block;
+    color: #3C4242;
+    font-family: "CoreSansC";
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+}
+.line {
+    display: inline-block;
+    width: 6px;
+    height: 28px;
+    background: #8A33FD;
+    border-radius: 10px;
+    margin-right: 10px;
+    /* margin-left: -21px; */
+}
+.reexplore-block {
+    margin-bottom: 25px;
+}
+.reexplore-block h3 {
+    font-family: "CoreSansC";
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.reexplore-block p {
+    margin-bottom: 20px;
+}
+.destination-block {
+    margin-bottom: 20px;
+}
+.destination-block h3 {
+    font-family: "CoreSansC";
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.destination-block p {
+    margin-bottom: 20px;
+}
+.clothing-block a {
+    font-family: "CoreSansC";
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+
+/* МАКЕТ №4 */
+
+.jewels-block {
+    max-width: 1103px;
+    margin: 100px auto;
+    font-family: "Cormorant Infant", serif;
+    font-size: 0;
+    font-weight: 700;
+}
+.content-block {
+    display: inline-block;
+    width: 503px;
+    padding-top: 70px;
+    margin-right: 75px;
+}
+.content-block h4 {
+    font-size: 20px;
+    color: #D58417;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+.content-block h2 {
+    color: #000;
+    font-size: 64px;
+    text-transform: capitalize;
+    font-family: "Cormorant Infant", serif;
+    margin-bottom: 31px;
+}
+.content-block p {
+    color: #606060;
+    font-size: 30px;
+    line-height: 1.4;
+}
+.img-block {
+    display: inline-block;
+    width: 525px; 
+    font-size: 0;
+    vertical-align: top;
+}
+.left-img-block {
+    display: inline-block;
+    border-radius: 236px;
+    border: 1px solid #502203;
+    width: 177px;
+    height: 336px;  
+    margin-right: 30px; 
+}
+.left-img {
+    margin-top: 14px;
+    margin-left: -10px;
+    vertical-align: middle;
+}
+.right-img-block {
+    display: inline-block;
+    border-radius: 236px;
+    border: 1px solid #502203;
+    width: 308px;
+    height: 506px;
+}
+.right-img {
+    margin-top: 19px;
+    margin-left: -11px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ЕКСПЕРЕМЕНТИ */
+
+.some {
+    background-color: purple;
+    width: 500px;
+    height: 200px;
+}
+.border {
+    background-color: green;
+    margin: 15px;
+	border-top: 10px solid yellow;
+    border-right: 20px dotted red;
+    border-bottom: 30px dashed blue;
+    border-left: 40px double black;
+    height: 200px;
+}
+.outline {
+    margin-top: 10px;
+    background-color: green;
+    height: 50px;
+    outline: 100px double orange;
+}
+.radius {
+    margin-top: 150px;
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    border-radius: 26% 74% 86% 14% / 78% 18% 82% 22%;
+}
+.oval {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    border-end-start-radius: 50%;
+    background-color: pink;
+}
+.shadow {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+    width: 300px;
+    height: 100px;
+    background-color: green;
+    box-shadow: 50px 10px 100px 70px red,
+                -50px -10px 100px 70px blue;
+}
+.another {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+    background-color: green;
+    box-shadow: inset 1px 1px 50px 10px black;
+}
+.opacity {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+    background-color: green;
+    opacity: 0.1;
+}
+.visibility {
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: green;
+    visibility: hidden;
+}
