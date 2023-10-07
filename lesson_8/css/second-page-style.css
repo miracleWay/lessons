@@ -2,12 +2,15 @@
 
 @import url("reset.css");
 
+/* МАКЕТ №1 */
+
 .limited-whitecollar-block {
     max-width: 673px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     color: #7D7D7D;
+    margin-bottom: 100px;
 }
 .welcome {
     margin-bottom: 16px;
@@ -33,7 +36,7 @@ h1 {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.21;
-    width: 413px;
+    max-width: 415px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
@@ -119,4 +122,214 @@ h1 {
     text-transform: capitalize;
     width: 130px;
     height: 22px;
+}
+
+
+/* МАКЕТ №2 */
+
+
+.limited-project-block {
+    max-width: 1220px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    margin-bottom: 100px;
+}
+.latest-projects-block {
+    max-width: 852px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+}
+.latest-projects {
+    text-align: center;
+    margin-bottom: 14px;
+}
+.latest-projects h5 {
+    display: inline-block;
+    color: #37393F;
+    font-weight: 500;
+}
+.main-project-content {
+    text-align: center;
+}
+.main-project-content h2 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 14px;
+}
+.main-project-content p {
+    line-height: 1.46;
+}
+
+
+.first-image-block {
+    margin-bottom: 58px;
+    font-size: 0;
+}
+.first-image {
+    display: inline-block;
+    margin-right: 34px;
+}
+.second-image {
+    display: inline-block;
+    width: 384px;
+    height: 582px;
+    margin-right: 34px;
+}
+.third-image {
+    display: inline-block;
+}
+img {
+    margin-bottom: 24px;
+}
+.content {
+    padding-bottom: 5px;
+    background: url("../img/date.png") 0 35px / 22px no-repeat;
+}
+.content h4 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 10px;
+}
+.content p {
+    font-size: 14px;
+    line-height: 1.46;
+    margin-left: 25px;
+}
+.second-image-block {
+    font-size: 0;
+}
+
+
+/* МАКЕТ №3 */
+
+.limited-clothing-block {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-family: "Causten", sans-serif;
+    color: #807D7E;
+    font-size: 20px;
+    padding-left: 21px;
+    margin-bottom: 100px;
+}
+.clothing-title {
+    margin-left: -21px;
+    background: url("../img/back.png") 0 50% / 6px 28px no-repeat;
+    margin-bottom: 30px;
+}
+.clothing-title h2 {
+    color: #3C4242;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: 0.56px;
+    margin-left: 21px;
+}
+.reexplore-block {
+    margin-bottom: 25px;
+}
+.reexplore-block h3 {
+    color: #807D7E;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    margin-bottom: 25px;
+}
+.reexplore-block p {
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px; 
+}
+.destination-block {
+    margin-bottom: 20px;
+}
+.destination-block h3 {
+    color: #807D7E;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    margin-bottom: 25px;
+}
+.destination-block p {
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px; 
+}
+span {
+    font-weight: 700;
+}
+.more {
+    color: #807D7E;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+
+
+/* МАКЕТ №4 */
+
+
+.limited-fashion-block {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-family: "Causten", sans-serif;
+    font-size: 0;
+    color: #FFF;
+}
+.back-text-block {
+    display: inline-block;
+    width: 613px;
+    height: 639px;
+    background: url("../img/back-left.png") no-repeat;
+    padding: 183px 74px 174.72px 74px;
+    vertical-align: bottom;
+}
+.back-content-block h2 {
+    font-family: "CoreSansC", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.47;
+    letter-spacing: 0.208px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.back-content-block p {
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.link {
+    background-color: #FFF;
+    width: 168px;
+    height: 46px;
+    padding: 12px 40px;
+    border-radius: 8px;
+}
+.link p {
+    color: #3C4242;
+    text-align: center;
+    font-family: "Causten", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.back-empty-block {
+    display: inline-block;
+    width: 626px;
+    height: 639px;
+    background: url("../img/back-right.png") no-repeat;
 }
