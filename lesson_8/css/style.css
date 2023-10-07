@@ -1,0 +1,75 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+a {
+    font-size: 50px;
+    color: aqua;
+    background-color: blueviolet;
+}
+
+main {
+    padding: 50px;
+}
+
+.back-image {
+    background-image: url("../img/woman-left.png");
+    background: linear-gradient(90deg, rgba(215,41,18,1) 0%, rgba(9, 121, 24, 0.422) 50%, rgba(143, 7, 150, 0) 100%);
+    height: 300px;
+}
+.back-gradient {
+    height: 300px;
+    background: radial-gradient(circle, rgba(215,41,18,1) 0%, rgba(9,121,24,1) 50%, rgba(144,7,150,1) 100%); 
+}
+.back-repeat {
+    height: 900px;
+    background-image: url("../img/woman-left.png");
+    background-repeat: round;
+    /* background-repeat: 50%; Коли картинки повторюються, вони зміщуються вверх незалежно від позиціювання */
+}
+.back-position {
+    height: 800px;
+    background-image: url("../img/woman-left.png");
+    background-repeat: no-repeat;
+    background-position: 20% bottom;
+}
+.back-attach {
+    height: 2000px;
+    background-image: url("../img/woman-left.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+.back-attach-local {
+    height: 300px;
+    background-image: url("../img/woman-left.png");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    overflow: scroll;
+}
+.back-size {
+    height: 600px;
+    background-image: url("../img/woman-left.png");
+    background-repeat: no-repeat;
+    background-size: 200px 50%;
+}
+.back-contain {
+    height: 300px;
+    background-image: url("../img/woman-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.back-cover {
+    height: 300px;
+    background-image: url("../img/woman-left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back-ultra {
+    height: 800px;
+    background: url("../img/woman-left.png") 0 50% / contain no-repeat, 
+    url("../img/woman-right.png") 100% 50% / 200px repeat-y,
+    url("../img/woman-left.png") top center / auto 200px no-repeat, 
+    url("../img/woman-left.png") center bottom / auto 200px no-repeat, 
+    linear-gradient(90deg, rgba(68,8,247,1) 0%, rgba(9,117,121,1) 50%, rgba(168,5,226,1) 77%, rgba(150,7,123,1) 100%);
+}

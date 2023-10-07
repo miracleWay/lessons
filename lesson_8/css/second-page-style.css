@@ -1,0 +1,122 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.limited-whitecollar-block {
+    max-width: 673px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+}
+.welcome {
+    margin-bottom: 16px;
+}
+.square {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #40DDB6;
+    margin-right: 6px;
+}
+.welcome h5 {
+    display: inline-block;
+    color: #37393F;
+    font-weight: 500;
+}
+.main-content {
+    margin-bottom: 20px;
+}
+h1 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    width: 413px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.main-content p {
+    line-height: 1.46;
+    margin-bottom: 15px;
+}
+.list-block {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-bottom: 43px;
+}
+.list-block li {
+    margin-bottom: 23px;
+    line-height: 1.65;
+    background: url("../img/vector.png") 0 3px / 27px 27px no-repeat;
+    padding-left: 35px;
+}
+
+.achievments-block {
+    width: 613px;
+    margin-bottom: 37px;
+    font-size: 0;
+}
+.experience-block {
+    display: inline-block;
+    width: 295px;
+    height: 140px;
+    padding: 31px 32px 32px 90px;
+    border: 1px solid #E3E3E3;
+    background: url("../img/experience-icon.png") 32px 31px / 39px no-repeat;
+    margin-right: 21px;
+}
+.experience-content-block {
+    width: 173px;
+    height: 77px;
+}
+.experience-content-block h3 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.experience-content-block p {
+    font-size: 16px;
+    line-height: 1.35;
+}
+.awards-block {
+    display: inline-block;
+    width: 296px;
+    height: 140px;
+    padding: 31px 37px 32px 95px;
+    border: 1px solid #E3E3E3;
+    background: url("../img/award-icon.png") 32px 37px / 39px no-repeat;
+}
+.awards-content-block {
+    width: 164px;
+    height: 77px;
+}
+.awards-content-block h3 {
+    font-family: "Poppins", sans-serif;
+    color: #37393F;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.awards-content-block p {
+    font-size: 16px;
+    line-height: 1.35;
+}
+.button {
+    width: 184px;
+    height: 65px;
+    background: #6B77E5;
+    padding: 21px 27px 22px;
+}
+.button p {
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 130px;
+    height: 22px;
+}
