@@ -1,0 +1,265 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+header > a {
+    font-size: 50px;
+    color: aqua;
+    background-color: blueviolet;
+}
+header:hover a {
+    border: 10px dotted orange;
+}
+header > p {
+    font-size: 30px;
+}
+main {
+    padding: 50px;
+}
+
+
+.link {
+    background-color: yellow;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.link:hover {
+    background-color: blue;
+    font-size: 30px;
+    text-decoration: overline;
+}
+
+.button {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.button a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    background-color: blueviolet;
+    border-radius: 25px;
+    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.539);
+}
+
+.button:active a {
+    box-shadow: 1px 1px 20px 10px rgba(108, 107, 107, 0.539);
+}
+
+.father-block {
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.father-block a {
+    display: inline-block;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+.father-block:hover a { 
+    margin-left: 250px;
+}
+.woman-img {
+    display: none;
+}
+.father-block:hover .woman-img {
+    display: inline-block;
+}
+
+.lesson {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.lesson-block {
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    visibility: hidden;
+    opacity: 0;
+}
+.lesson:hover .lesson-block {
+    visibility: visible;
+    opacity: 1;
+}
+
+.visited {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.visited-link:visited {
+    color: blueviolet;
+}
+.visited-link:hover {
+    text-decoration: underline;
+}
+.focus {
+    margin-bottom: 50px;
+}
+.focus > li {
+    margin-bottom: 15px;
+    font-size: 30px;   
+}
+.tag:focus {
+    outline: 3px dashed rgb(106, 255, 0);
+}
+
+.box-conteiner {
+    margin-bottom: 50px;
+}
+.box-1 {
+    display: inline-block;
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    visibility: hidden;
+}
+.box-2 {
+    display: inline-block;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    visibility: hidden;
+}
+.box-3 {
+    display: inline-block;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    visibility: hidden;
+}
+.box-1:target {
+    visibility: visible;
+}
+.box-2:target {
+    visibility: visible;
+}
+.box-3:target {
+    visibility: visible;
+}
+
+.child-box {
+    font-size: 30px;
+    outline: 3px solid black;
+    margin-bottom: 50px;
+}
+.child-box p {
+    margin-bottom: 15px;
+}
+.child-box *:last-of-type {
+    color: red;
+    margin-bottom: 0;
+}
+
+.not-child-box {
+    font-size: 30px;
+    outline: 3px solid black;
+    margin-bottom: 50px;
+}
+.not-child-box a {
+    display: inline-block;
+}
+.not-child-box *:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.nth-box {
+    font-size: 30px;
+    outline: 3px solid black;
+    margin-bottom: 50px;
+}
+.nth-box p {
+    margin-bottom: 15px;
+}
+.nth-box p:nth-child(4 of p) {
+    text-decoration: line-through;
+    color: red;
+}
+.nth-box :nth-child(odd) {
+    color: blue;
+}
+.nth-box :nth-child(even) {
+    color: aqua;
+}
+
+.nth-algorithms {
+    font-size: 30px;
+    outline: 3px solid black;
+    margin-bottom: 50px;
+}
+.nth-algorithms p {
+    margin-bottom: 15px;
+}
+.nth-algorithms :nth-child(3n + 1) {
+    color: rgb(204, 252, 14);
+}
+.nth-algorithms :nth-child(3n + 2) {
+    color: rgb(37, 3, 210);
+}
+
+.element {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.title-element::before {
+    content: "";
+    display: inline-block;
+    border-radius: 10px;
+    background: #8A33FD;
+    width: 6px;
+    height: 28px;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.list-element {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.list-element li:not(:last-child){
+    margin-bottom: 15px;
+}
+.list-item::before {
+    content: "";
+    display: inline-block;
+    background: #8A33FD;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.list-block {
+    display: inline-block;
+}
+.list-block a {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 50px;
+    background-color: green;
+    color: aqua;
+}
+.list-block:hover a {
+    text-decoration: underline;
+    color: red;
+}
+
+.list-box {
+    font-size: 30px;
+}
+.list-dot:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.list-box {
+    visibility: hidden;
+    margin-bottom: 100px;
+}
+.list-box:target {
+    visibility: visible;
+}

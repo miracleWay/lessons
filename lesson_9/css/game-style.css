@@ -1,0 +1,142 @@
+.game-block {
+    max-width: 1600px;
+    height: 1400px;
+    margin: 0 auto;
+    background-color: rgb(199, 202, 14);
+    font-size: 0;
+}
+.game-block h2 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.line-1 {
+    background-color: aqua;
+    width: 50px;
+    height: 50px
+}
+.line-1:hover ~ .line-2 {
+    visibility: visible;
+}
+.line-2:hover {
+    visibility: visible;
+}
+.line-2 {
+    background-color: aqua;
+    width: 50px;
+    height: 100px;
+    visibility: hidden;
+}
+.line-2:hover ~ .line-3 {
+    visibility: visible;
+}
+.line-3:hover {
+    visibility: visible;
+}
+.line-3 {
+    background-color: aqua;
+    height: 50px;
+    width: 1400px;
+    visibility: hidden;
+}
+.line-3:hover ~ .line-4 {
+    visibility: visible;
+}
+.line-4:hover {
+    visibility: visible;
+}
+.line-4 {
+    background-color: aqua;
+    width: 50px;
+    height: 150px;
+    margin-left: 1350px;
+    visibility: hidden;
+}
+.line-4:hover ~ .line-5 {
+    visibility: visible;
+}
+.line-5:hover {
+    visibility: visible;
+}
+.line-5 {
+    background-color: aqua;
+    height: 50px;
+    width: 800px;
+    margin-left: 600px;
+    visibility: hidden;
+}
+.line-5:hover ~ .line-6 {
+    visibility: visible;
+}
+.line-6:hover {
+    visibility: visible;
+}
+.line-6 {
+    background-color: aqua;
+    width: 50px;
+    height: 200px;
+    margin-left: 600px;
+    visibility: hidden;
+}
+.line-6:hover ~ .line-7 {
+    visibility: visible;
+}
+.line-7:hover {
+    visibility: visible;
+}
+.line-7 {
+    background-color: aqua;
+    height: 150px;
+    width: 20px;
+    margin-left: 600px;
+    visibility: hidden;
+}
+.line-7:hover ~ .line-8 {
+    visibility: visible;
+}
+.line-8:hover {
+    visibility: visible;
+}
+.line-8 {
+    background-color: aqua;
+    height: 150px;
+    width: 10px;
+    margin-left: 600px;
+    visibility: hidden;
+}
+.line-8:hover ~ .line-9 {
+    visibility: visible;
+}
+.line-9:hover {
+    visibility: visible;
+}
+.line-9 {
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    margin-left: 600px;
+    visibility: hidden;
+}
+.line-9:hover ~ .finish {
+    visibility: visible;
+}
+.finish:hover {
+    visibility: visible;
+}
+.finish {
+    background-color: violet;
+    widows: 1600px;
+    height: 400px;
+    visibility: hidden;
+}
+.finish p {
+    padding: 100px;
+    color: blue;
+    width: 800px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,407 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+main {
+    padding: 50px;
+}
+
+
+.limited-consulting-block {
+    max-width: 692px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.intro-box {
+    margin-bottom: 42px;
+}
+.intro-box h1 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+.intro-box p {
+    line-height: 1.46;
+}
+.intro-box p:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+.main-content {
+    margin-bottom: 40px;
+}
+.main-content a {
+    display: inline-block;
+}
+.main-content h3 {
+    color: #6B77E5;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 12px;
+}
+.main-content p {
+    line-height: 1.46;
+}
+.main-content > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+.img-text-block {
+    font-size: 0;
+    margin-bottom: 50px;
+}
+.img-block {
+    display: inline-block;
+    width: 331px;
+    height: 263px;
+    background: url("../img/computer.png") no-repeat;
+    margin-right: 29px;
+}
+.benefits-block {
+    display: inline-block;
+    width: 332px;
+    vertical-align: top;
+}
+
+.benefits-block h2 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 15px;
+}
+.benefits-block h3 {
+    color: #40DDB6;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 21px;
+}
+.list-benefits {
+    font-size: 18px;
+}
+.list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.list-item::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/vector.png") 0 0 no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.faq-block h2 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 4px;
+}
+.faq-block p {
+    line-height: 1.46;
+}
+.faq-block p:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+
+/* МАКЕТ №2 */
+
+
+.limited-business-block {
+    max-width: 675px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.welcome-block {
+    margin-bottom: 48px;
+}
+.titles-block {
+    width: 414px;
+    margin-bottom: 10px;
+}
+.titles-block h4::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    display: inline-block;
+    margin-right: 6px;
+}
+.titles-block h4 {
+    color: #37393F;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.titles-block h4:hover {
+    text-decoration: underline;
+}
+.titles-block h2 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+}
+.main-text-block p {
+    line-height: 1.46;
+}
+.main-text-block *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.target-block {
+    margin-bottom: 48px;
+}
+.content-block {
+    width: 675px;
+    border: 1px solid #E3E3E3;
+    padding: 28px 41px 28px 38px;
+}
+
+.text-block p {
+    line-height: 1.46;
+    margin-left: 46px;
+    /* Розумію, що тут має бути падінг, але мені здається, 
+    що галочка відноситься до заголовку, 
+    тому я не міг галочку в інший блок помістити і розірвати тим самим від заголовку */
+}
+.text-block p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.text-block h3 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.text-block h3::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/vector.png") no-repeat;
+    width: 28px;
+    height: 28px;
+    margin-right: 19px;
+    vertical-align: middle;
+}
+.content-block:not(:last-child) {
+    margin-bottom: 31px;
+}
+
+.button {
+    display: inline-block;
+    width: 200px;
+    min-height: 65px;
+    padding: 21px 35px 22px 35px;
+    text-align: center;
+    background: #6B77E5;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.button:hover {
+    text-decoration: underline;
+}
+.button:active {
+    background: #2236f0;
+}
+
+/* МАКЕТ 3 */
+
+.limited-work-block {
+    max-width: 1220px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.main-title-block {
+    text-align: center;
+    margin-bottom: 41px;
+}
+.main-title-block h4 {
+    color: #37393F;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+.main-title-block h4::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    display: inline-block;
+    margin-right: 6px;
+}
+.main-title-block h2 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    text-transform: capitalize;
+}
+
+.box-block {
+    font-size: 0;
+    min-height: 337px;
+    padding-top: 36px;
+}
+.box-item {
+    display: inline-block;
+    width: 386px;
+    padding: 0 43px 43px 58px;
+    text-align: center;
+    background: #F4F4F4;
+    font-size: 18px;
+}
+.box-item:not(:last-child) {
+    margin-right: 31px;
+}
+.box-item h3 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 16px;
+}
+.box-item p {
+    line-height: 1.46;
+    margin-bottom: 16px;
+}
+.box-item p:last-of-type {
+    margin-bottom: 37px;
+}
+.box-item a {
+    display: inline-block;
+    color: #6B77E5;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.box-item a:hover {
+    text-decoration: underline;
+}
+.date-img::before {
+    content: "";
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background: url("../img/date-img.png") no-repeat;
+    margin-top: -35px;
+    margin-bottom: 22px;
+}
+.pazzle-img::before {
+    content: "";
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background: url("../img/pazzle-img.png") no-repeat;
+    margin-top: -35px;
+    margin-bottom: 22px;
+}
+.vector-img::before {
+    content: "";
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background: url("../img/vector-img.png") no-repeat;
+    margin-top: -35px;
+    margin-bottom: 22px;
+}
+.vector-img:hover ::before{
+    border: 3px solid black
+}
+
+/* МАКЕТ №4 */
+
+.limited-jewellery-block {
+    max-width: 1214px;
+    margin: 0 auto;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 100px;
+    font-size: 0;
+}
+.text-block {
+    display: inline-block;
+    width: 481px;
+}
+.text-block h2 {
+    font-size: 60px;
+    line-height: 1.15;
+}
+.text-block h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 65%;
+    border: 3px solid #78473B;
+    margin-top: 13px;
+}
+.first-card {
+    display: inline-block;
+    margin-top: 32px;
+    margin-right: 55px;
+    font-size: 24px;
+    vertical-align: middle;
+    width: 334px;
+}
+.first-card:hover {
+    box-shadow: 1px 1px 20px 5px black;
+}
+.first-card p:hover {
+    text-decoration: underline;
+}
+.first-card .name,
+.price {
+    line-height: 1.4;
+}
+.name {
+    margin-bottom: 4px;
+}
+.img-card-block {
+    width: 334px;
+    height: 381px;
+    border: 1px solid #000;
+    padding-top: 9px;
+    padding-left: 10px;
+    margin-bottom: 34px;
+}
+.second-card {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+    width: 334px;
+}
+.second-card:hover {
+    box-shadow: 1px 1px 20px 5px black;
+}
+.second-card p:hover {
+    text-decoration: underline;
+}
+.second-card .main-card-title {
+    font-size: 40px;
+    line-height: 1.13;
+    width: 339px;
+    margin-bottom: 31px;
+}
