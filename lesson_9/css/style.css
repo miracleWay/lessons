@@ -263,3 +263,20 @@ main {
 .list-box:target {
     visibility: visible;
 }
+
+.number {
+    font-size: 30px;
+}
+.number li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.number {
+    counter-reset: item;
+}
+.number li::before {
+    counter-increment: item;
+    content: counter(item);
+    display: inline-block;
+    margin-right: 20px;
+	color: green;
+}
