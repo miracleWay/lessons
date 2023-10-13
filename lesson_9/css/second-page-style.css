@@ -166,7 +166,7 @@ main {
     margin-bottom: 16px;
 }
 
-.target-block {
+/* .target-block {
     margin-bottom: 48px;
 }
 .content-block {
@@ -177,10 +177,7 @@ main {
 
 .text-block p {
     line-height: 1.46;
-    margin-left: 46px;
-    /* Розумію, що тут має бути падінг, але мені здається, 
-    що галочка відноситься до заголовку, 
-    тому я не міг галочку в інший блок помістити і розірвати тим самим від заголовку */
+    padding-left: 46px;
 }
 .text-block p:not(:last-child) {
     margin-bottom: 15px;
@@ -203,7 +200,46 @@ main {
 }
 .content-block:not(:last-child) {
     margin-bottom: 31px;
+} */
+
+.target-block {
+    margin-bottom: 48px;
 }
+.list-block {
+    width: 675px;
+    border: 1px solid #E3E3E3;
+    padding: 28px 41px 28px 38px;
+}
+.list-block:not(:last-child) {
+    margin-bottom: 31px;
+}
+.list-block p {
+    line-height: 1.46;
+    padding-left: 46px;
+}
+.list-block p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.list-block h3 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.list-block h3::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/vector.png") no-repeat;
+    width: 28px;
+    height: 28px;
+    margin-right: 19px;
+    vertical-align: middle;
+}
+
+
+
+
 
 .button {
     display: inline-block;
@@ -262,7 +298,6 @@ main {
 
 .box-block {
     font-size: 0;
-    min-height: 337px;
     padding-top: 36px;
 }
 .box-item {
@@ -305,7 +340,8 @@ main {
     display: inline-block;
     width: 72px;
     height: 72px;
-    background: url("../img/date-img.png") no-repeat;
+    background: url("../img/date-img.png") center / cover no-repeat;
+    border-radius: 50%;
     margin-top: -35px;
     margin-bottom: 22px;
 }
@@ -367,7 +403,7 @@ main {
     width: 334px;
 }
 .first-card:hover {
-    box-shadow: 1px 1px 20px 5px black;
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.2);
 }
 .first-card p:hover {
     text-decoration: underline;
@@ -400,7 +436,7 @@ main {
     width: 334px;
 }
 .second-card:hover {
-    box-shadow: 1px 1px 20px 5px black;
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.2);
 }
 .second-card p:hover {
     text-decoration: underline;
