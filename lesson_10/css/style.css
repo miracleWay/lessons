@@ -1,0 +1,48 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    background-color: rgb(39, 150, 206);
+}
+
+header {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: rgb(89, 255, 0);
+    margin-bottom: 100px;
+}
+
+header p>a:hover {
+    text-decoration: underline;
+}
+
+.pictures {
+    width: 1500px;
+    min-height: 200px;
+    border: 2px dotted black;
+    padding: 50px;
+    margin: 0 auto;
+}
+.pictures:not(:last-child) {
+    margin-bottom: 50px;
+}
+.pictures p {
+    color: rgb(95, 21, 223);
+    font-size: 30px;
+}
+.pictures img:not(:last-child) {
+    margin-left: 20px;
+}
+.content-img {
+    vertical-align: middle;
+    width: 200px;
+}
+
+p {
+    display: inline-block;
+}
+
+
+
