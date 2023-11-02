@@ -1,0 +1,130 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+header p {
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+header a {
+    font-size: 30px;
+    display: block;    
+}
+a:hover {
+    color: chocolate;
+}
+header {
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.block-1, 
+.block-2, 
+.block-3,
+.block-4,
+.block-5,
+.block-6 {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.block-1 {
+    background-color: green;
+    position: relative;
+    top: 60px;
+    left: 60px;
+    z-index: 10;
+}
+.block-2 {
+    background-color: orange;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 9;
+}
+.block-3 {
+    background-color: blue;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    z-index: 8;
+}
+
+.section-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.section-2 > .block-4 {
+    background-color: brown;
+}
+.section-2 > .block-5 {
+    background-color: rgb(155, 42, 165);
+}
+.section-2 > .block-6 {
+    background-color: rgb(42, 165, 159);
+}
+
+.container-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.container-2 {
+}
+
+.cont-1, .cont-2, .cont-3, .cont-4, .cont-5, .cont-6 {
+    padding: 20px;
+    text-align: center;
+}
+
+.cont-1 {
+    background-color: green;
+}
+.cont-2 {
+    background-color: orange;
+}
+.cont-3 {
+    background-color: blue;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+}
+.cont-4 {
+    background-color: brown;
+}
+.cont-5 {
+    background-color: rgb(155, 42, 165);
+}
+.cont-6 {
+    background-color: rgb(42, 165, 159);
+    margin-bottom: 50px;
+}
+
+.sticky {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top: 10%;
+    left: 50%;
+}
