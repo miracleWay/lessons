@@ -142,14 +142,14 @@
     left: 0;
 }
 .side-list {
-    position: relative;
-    top: 0;
-    left: 0;
 }
 .side-list__item {
     padding: 10px;
     background-color: violet;
     width: 250px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 .side-list__item:not(:last-child) {
     margin-bottom: 10px;
@@ -168,7 +168,11 @@
     background: url("../img/main-img/arrow.webp") 0 0 / 30px no-repeat;
     position: absolute;
     left: 80%;
-    top: 4%;
+    top: 15%;
+    visibility: hidden;
+}
+.side-list__item:hover ::after {
+    visibility: visible;
 }
 .content {
     background-color: crimson;
