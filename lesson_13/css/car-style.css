@@ -1,0 +1,299 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    background-color: grey;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    padding: 100px;
+}
+
+
+.car {
+    width: 1300px;
+    height: 700px;
+    background-color: rgba(238, 130, 238, 0.414);
+    background: url("../img/main-img/night-road.jpg") no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+}
+.door-left {
+    display: inline-block;
+    background-color: white;
+    width: 200px;
+    height: 170px;
+    border: 1px solid black;
+    transform: skew(-3deg);
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+.door-left__handle {
+    height: 7px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    box-shadow: 1px 1px 1px 3px grey;
+}
+.door-left__line {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+    left: 0;
+}
+.door-right {
+    display: inline-block;
+    background-color: white;
+    width: 200px;
+    height: 170px;
+    border: 1px solid black;
+    transform: skew(-3deg);
+    position: absolute;
+    top: 350px;
+    left: 699px;
+}
+.door-right__handle {
+    height: 7px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    box-shadow: 1px 1px 1px 3px grey;
+}
+.door-right__line {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+    left: 0;
+}
+.bag {
+    display: inline-block;
+    background-color: white;
+    border-radius: 0% 100% 100% 0% / 0% 80% 20% 100%;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 270px;
+    left: 901px;
+    border: 1px solid black;
+    transform: skew(-3deg);
+}
+.bag__line {
+    width: 30%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 96%;
+    left: 0;
+    border-radius: 100% 0% 100% 0% / 19% 100% 0% 81%;
+}
+.bag__fuel {
+    border-radius: 0% 100% 30% 70% / 100% 17% 83% 0%;
+    display: inline-block;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    border: 1px solid black;
+    transform: skew(-3deg);
+}
+.wheel-left {
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;   
+    height: 150px;
+    position: absolute;
+    top: 440px;
+    left: 830px;
+}
+.wheel-left__deco1 {
+display: inline-block;
+background-color: orange;
+position: absolute;
+top: 0;
+left: 47%;
+width: 5%;
+height: 100%;
+border-radius: 50px;
+}
+.wheel-left__deco2 {
+    display: inline-block;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 47%;
+    width: 5%;
+    height: 100%;
+    border-radius: 50px;
+    transform: rotate(90deg);
+}
+.wheel-left__deco3 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    background-color: red;
+}
+.wheel-right {
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;   
+    height: 150px;
+    position: absolute;
+    top: 440px;
+    left: 229px;
+    z-index: 1;   
+}
+.wheel-right__deco1 {
+    display: inline-block;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 47%;
+    width: 5%;
+    height: 100%;
+    border-radius: 50px;
+    }
+    .wheel-right__deco2 {
+        display: inline-block;
+        background-color: orange;
+        position: absolute;
+        top: 0;
+        left: 47%;
+        width: 5%;
+        height: 100%;
+        border-radius: 50px;
+        transform: rotate(90deg);
+    }
+    .wheel-right__deco3 {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 43%;
+        left: 43%;
+        background-color: red;
+    }
+.front-glass {
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 0% ;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 270px;
+    left: 302px;
+    border: 1px solid black;
+    transform: skew(-3deg);
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.4);
+    border: 0 solid black;
+    border-width: 5px 1px;
+}
+.left-glass {
+    background-color: rgba(128, 128, 128, 0.4);
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    border: 0 solid black;
+    border-width: 5px 1px 0;
+    transform: skew(-3deg);
+    position: absolute;
+    top: 270px;
+    left: 506px;
+}
+.right-glass {
+    background-color: rgba(128, 128, 128, 0.4);
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    border: 0 solid black;
+    border-width: 5px 1px 0;
+    transform: skew(-3deg);
+    position: absolute;
+    top: 270px;
+    left: 706px;
+}
+.left-headlight {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,230,0,1) 100%);
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    transform: skew(-45deg);
+    border-radius: 50px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    z-index: 1;
+    box-shadow: 1px 1px 10px 5px yellow;
+}
+.right-headlight {
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    transform: skew(-45deg);
+    border-radius: 50px;
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+    z-index: 1;
+    box-shadow: 1px 1px 10px 5px red;
+}
+.hood {
+    border-radius: 100% 0% 100% 0% / 19% 100% 0% 81%;
+    width: 200px;
+    height: 170px;
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    left: 301px;
+    transform: skew(-3deg);
+    border: 1px solid black;
+}
+.hood__line {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+    left: 0;
+}
+.hood2 {
+    border-radius: 100% 0% 0% 100% / 0% 79% 21% 100% ;
+    width: 200px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    top: 380px;
+    left: 102px;
+    transform: skew(-3deg) scale(-1, 1) rotate(180deg);
+    border: 1px solid black;
+}
+.hood2__line {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

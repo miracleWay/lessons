@@ -1,0 +1,325 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.wrapper {
+    background-color: grey;
+    padding: 150px;
+    font-size: 30px;
+    color: black;
+}
+
+header {
+    margin-bottom: 200px;
+    color: yellow;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+.translate {
+    background-color: rgba(255, 0, 0, 0.2);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    display: inline-block;
+    margin-right: 200px;
+}
+
+.translate__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform: translate(10px, -50%);
+}
+
+.translate-origin {
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.2);
+    width: 200px;
+    height: 200px;
+}
+
+.translate-origin__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform-origin: 10px 10px;
+    transform: translate(10px, -50%);
+}
+
+
+.scale {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    display: inline-block;
+    margin-right: 200px;
+}
+
+.scale__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform: scale(1, -1);
+}
+
+.scale-origin {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.scale-origin__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform-origin: 20% -50%;
+    transform: scale(0.5);
+}
+
+.rotate {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    position: relative;
+    display: inline-block;
+    margin-right: 200px;
+}
+.rotate__item {
+    width: 200px;
+    height: 200px;
+    padding: 60px;
+}
+span {
+    position: relative;
+}
+.rotate__item::before {
+    content: "";
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+.rotate-origin {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    position: relative;
+    display: inline-block;
+}
+.rotate-origin__item {
+    width: 200px;
+    height: 200px;
+    padding: 60px;
+}
+span {
+    position: relative;
+}
+.rotate-origin__item::before {
+    content: "rotate-origin";
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top right;
+    transform: rotate(160deg);
+}
+
+.rotate2 {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.rotate__item2 {
+    width: 200px;
+    height: 200px;
+    padding: 60px;
+    background-color: aqua;
+    /* transform: rotateX(60deg); */
+    /* transform: rotateY(-60deg); */
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+}
+
+.skew {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    display: inline-block;
+    margin-right: 200px;
+}
+
+.skew__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform: skew(40deg, 15deg);
+}
+
+.skew-origin {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.skew-origin__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform-origin: 90% 90%;
+    transform: skew(20deg);
+}
+
+
+
+
+
+.moon-block {
+    width: 1000px;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+.moon-black {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+.moon-white {
+    width: 520px;
+    height: 520px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+.moon-black:hover .moon-white {
+    transform-origin: 70% 10%;
+    transform: rotate(-40deg);
+}
+
+.perpspective {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    perspective: 100px;
+    perspective-origin: center;
+    margin-bottom: 200px;
+}
+
+.perspective__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform: translate3d(40px, 40px, 30px);
+    /* transform-origin: 30px 30px;
+    transform: translate(40px, 40px) scale(1.5); */
+}
+
+.perpspective-rotate {
+    background-color: rgba(255, 0, 0, 0.374);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    perspective: 100px;
+    perspective-origin: center;
+    margin-bottom: 200px;
+}
+.perspective-rotate__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transform: rotate3d(0, 1, 0, 20deg);
+}
+
+.flat {
+    background-color: rgba(255, 0, 0, 0.24);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    perspective: 1000px;
+    perspective-origin: center;
+    transform-style: preserve-3d;
+    margin-bottom: 200px;
+}
+.flat__item {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    backface-visibility: hidden;
+}
+.flat:hover .flat__item {
+    transform: rotateY(180deg);
+}
+
+
+.flip-body {
+    width: 200px;
+    height: 200px;
+    perspective: 500px;
+}
+.flip-back, .flip-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+.flip-front {
+    background-color: white;
+    transform: rotateY(0deg);
+}
+.flip-back {
+    background-color: black;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    color: white;
+}
+.flip-body:hover .flip-front {
+    transform: rotateY(180deg);
+}
+.flip-body:hover .flip-back {
+    transform: rotateY(0deg);
+}
