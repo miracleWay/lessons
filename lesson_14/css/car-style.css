@@ -1,0 +1,14 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    background-color: grey;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    padding: 100px;
+}
+
+

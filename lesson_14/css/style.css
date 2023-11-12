@@ -1,0 +1,451 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    overflow: hidden;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.wrapper {
+    background: url("../img/main-img/forest-anim2.jpg") 0 0 / 100% 100% no-repeat;
+} 
+
+.tank {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 37%;
+    left: -5%;
+    display: inline-block;
+    /* animation-name: moving-tank;
+    animation-duration: 1s; */
+    animation: moving-tank 1s;
+}
+.tank__body {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(169, 190, 10);
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    border: 1px solid;
+}
+.tank__tower {
+    width: 100px;
+    height: 80px;
+    background-color: rgb(169, 190, 10);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    border: 1px solid;
+}
+.tank__weapon {
+    width: 125px;
+    height: 15px;
+    background-color: rgb(169, 190, 10);
+    position: absolute;
+    top: 62%;
+    left: 69%;
+    border: 1px solid;
+    /* animation-name: sniping;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+    animation: sniping 2s linear 2s forwards;
+    transform-origin: 0 0;
+}
+.wheel__item {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 38%;
+    animation: wheel-rotate 1s;
+}
+.wheel__item-2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 44%;
+    animation: wheel-rotate 1s;
+}
+.wheel__item-3 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 52%;
+    animation: wheel-rotate 1s;
+}
+.wheel__item-4 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 60%;
+    animation: wheel-rotate 1s;
+}
+.wheel__item-6 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 68%;
+    animation: wheel-rotate 1s;
+}
+.wheel__item-7 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 76%;
+    animation: wheel-rotate 1s;
+}
+.wheel__item-8 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 84%;
+    animation: wheel-rotate 1s;
+}
+.wheel__item-9 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px dotted;
+    position: absolute;
+    top: 89%;
+    left: 92%;
+    animation: wheel-rotate 1s;
+}
+.after::after {
+    height: 35px;
+    width: 3px;
+    background-color: black;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 49%;
+}
+.after::before {
+    height: 35px;
+    width: 3px;
+    margin-left: -2.5px;
+    background-color: black;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: rotate(90deg);
+}
+.tank__track {
+    width: 320px;
+    height: 40px;
+    border: 7px dashed;
+    position: absolute;
+    top: 89%;
+    left: 38%;
+    border-radius: 50px;
+}
+.flag {
+    width: 50px;
+    height: 20px;
+    background: linear-gradient(0deg, rgba(255,248,0,1) 0%, rgba(25,83,255,1) 100%);
+    position: absolute;
+    top: 61%;
+    left: 55%;
+}
+
+.btr {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 37%;
+    left: 120%;
+    animation-name: moving-btr;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.btr__weapon {
+    width: 100px;
+    height: 10px;
+    background-color: grey;
+    position: absolute;
+    top: 65%;
+    left: -5%;
+    border: 1px solid;
+}
+.btr__tower {
+    width: 100px;
+    height: 80px;
+    background-color: grey;
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.btr__body {
+    width: 300px;
+    height: 100px;
+    background-color: grey;
+    border: 1px solid;
+    position: absolute;
+    top: 70%;
+    left: 0;
+}
+.wheel-btr__item {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border: 5px solid;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    animation: wheel-rotate-btr 2s;
+}
+.wheel-btr__item-2 {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border: 5px solid;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    animation: wheel-rotate-btr 2s;
+}
+.wheel-btr__item-3 {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border: 5px solid;
+    position: absolute;
+    top: 85%;
+    left: 31%;
+    animation: wheel-rotate-btr 2s;
+}
+.wheel-btr__item-4 {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border: 5px solid;
+    position: absolute;
+    top: 85%;
+    left: 44%;
+    animation: wheel-rotate-btr 2s;
+}
+.before::after {
+    height: 20px;
+    width: 20px;
+    border: 5px dotted black;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.flag-ru {
+    width: 50px;
+    height: 20px;
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,39,255,1) 65%, rgba(255,255,255,1) 100%);
+    position: absolute;
+    top: 75%;
+    left: 25%;
+}
+
+.shot {
+    width: 40px;
+    height: 10px;
+    background-color: rgb(91, 61, 6);
+    position: absolute;
+    top: 66.2%;
+    left: 10%;
+    border-radius: 50px;
+    box-shadow: -6px 0px 5px 5px yellow;
+    visibility: hidden;
+    transform: rotate(3deg);
+    /* animation-name: shoting;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 10); */
+    animation: shoting 5s cubic-bezier(0.755, 0.05, 0.855, 10) 4s;
+}
+
+.explosion {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: scale(0.5);
+}
+.explosion__circle-1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0px 0px 25px 25px red;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transform: scale(0);
+    /* animation-name: explosion-1;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards; */
+    animation: explosion-1 5s 6s forwards;
+}
+.explosion__circle-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0px 0px 25px 25px red;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: scale(0);
+    /* animation-name: explosion-2;
+    animation-duration: 5s;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards; */
+    animation: explosion-2 5s 6.5s forwards;
+}
+.explosion__circle-3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0px 0px 25px 25px red;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: scale(0);
+    /* animation-name: explosion-3;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards; */
+    animation: explosion-3 5s 7s forwards;
+}
+p {
+    display: inline-block;
+    color: blue;
+    font-size: 250px;
+    width: 850px;
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: scale(0);
+    animation: glory 2s 10s forwards;
+}
+@keyframes moving-tank {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: -5%;
+    }
+}
+@keyframes wheel-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes wheel-rotate-btr {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes sniping {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
+}
+@keyframes shoting {
+
+    0% {
+        visibility: visible;
+    }
+    100% {
+        top: 75%;
+        left: 90%;
+    }
+}
+@keyframes moving-btr {
+    0% {
+        left: 120%;
+    }
+    100% {
+        left: 80%;
+    }
+}
+@keyframes explosion-1 {
+    0% {
+    transform: scale(0);
+    }
+    100% {
+    transform: scale(10);
+    }
+}
+@keyframes explosion-2 {
+    0% {
+    transform: scale(0);
+    }
+    100% {
+    transform: scale(20);
+    }
+}@keyframes explosion-3 {
+    0% {
+    transform: scale(0);
+    }
+    100% {
+    transform: scale(30);
+    }
+}
+@keyframes glory {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
