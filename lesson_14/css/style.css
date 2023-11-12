@@ -4,6 +4,7 @@
 
 body {
     overflow: hidden;
+    font-family: "Lobster";
 }
 .wrapper {
     min-height: 100%;
@@ -360,8 +361,6 @@ p {
     color: blue;
     font-size: 250px;
     width: 850px;
-    font-family: "Cormorant Infant";
-    font-weight: 700;
     position: absolute;
     top: 20%;
     left: 35%;
