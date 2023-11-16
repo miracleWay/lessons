@@ -1,0 +1,317 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.wrapper > main {
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    font-family: "Causten";
+    font-size: 18px;
+    min-height: 111px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 100px;
+    margin-bottom: 50px;
+}
+/* В кінці зробити header fixed */
+.header__logo {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 91px;
+    margin-right: 163px;
+}
+.header__search-panel {
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    color: #807D7E;
+    text-align: center;
+    font-weight: 500;
+    padding: 12px 48px;
+    margin-right: 210px;
+}
+.header__search-panel::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../img/header-img/search.svg") no-repeat;
+    margin-right: 12px;
+    position: relative;
+    top: 2px;
+    left: 0;
+}
+.header__country {
+    color: #333;
+    margin-right: 60px;
+}
+.header__country:hover {
+    text-decoration: underline;
+}
+.header__country::after {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 5px;
+    background: url("../img/header-img/arrow-down.svg") no-repeat;
+    margin-left: 19px;
+    position: relative;
+    top: -3px;
+    left: 0;
+}
+.header__login-button {
+    padding: 12px 48px;
+    border-radius: 8px;
+    background-color: #8A33FD;
+    color: #FFF;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 29px;
+    transition: all 0.3s;
+}
+.header__login-button:hover {
+    background-color: #7d20f7;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.header__sign-up-button {
+    padding: 12px 48px;
+    border-radius: 8px;
+    border: 1px solid #3C4242;
+    color: #8A33FD;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s;
+}
+.header__sign-up-button:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+.page {
+    font-family: "Causten", sans-serif;
+}
+
+.wishlist {
+    margin: 0 auto;
+    display: flex;
+    max-width: 904px;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 22px;
+    margin-bottom: 100px;
+}
+.wishlist__title {
+    color: #3C4242;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.56px;
+}
+.wishlist__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.product-block {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #EDEEF2;
+    padding: 0 0 30px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-block__left-side {
+    display: flex;
+    align-items: center;
+}
+.product-block__cancel-link {
+    background: url("../img/main-img/close-cross.svg") no-repeat;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    height: 22px;
+    margin-right: 36px;
+    transition: transform 0.8s;
+}
+.product-block__cancel-link:hover {
+    transform: rotate(360deg);
+}
+.product-block__img {
+    margin-right: 36px;
+    transition: transform 0.3s;
+}
+.product-block__img:hover {
+    transform: scale(1.1);
+}
+.product-block__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 316px;
+}
+.product-block__title {
+    color: #3C4242;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+}
+.product-block__title a:hover {
+    text-decoration: underline;
+}
+.product-block__text {
+    color: #3C4242;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+}
+.product-block__content span {
+    color: #807D7E;
+    font-weight: 500;
+}
+.product-block__right-side {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.product-block__price {
+    color: #807D7E;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+    margin-right: 50px;
+}
+
+.product-block__add-button {
+    padding: 14px 28px;
+    background-color: #8A33FD;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.product-block__add-button:hover {
+    background-color: #7d20f7;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+.orders {
+    font-size: 14px;
+    max-width: 895px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.order-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid #EDEEF2;
+}
+.details-box {
+    display: flex;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding: 28px 47px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.details-box__left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.details-box__number {
+    color: #3C4242;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.details-box__text {
+    color: #807D7E;
+    font-weight: 600;
+}
+.details-box__text:not(:last-child) {
+    margin-bottom: 7px;
+}
+.details-box__text span {
+    color: #BEBCBD;
+    font-weight: 400;
+}
+.detailt-box__right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.product-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-box__left-side {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.product-box__img {
+    margin-right: 25px;
+    transition: transform 0.3s;
+}
+.product-box__img:hover {
+    transform: scale(1.1);
+}
+.product-box__title {
+    color: #3C4242;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.product-box__title a:hover {
+    text-decoration: underline;
+}
+.product-box__text {
+    color: #3C4242;
+    font-weight: 600;
+}
+.product-box__text:not(:last-child) {
+    margin-bottom: 5px;
+}
+.product-box__text span {
+    color: #BEBCBD;
+    font-weight: 600;
+}
+.product-box__text--gray {
+    color: #807D7E;
+    font-weight: 600;
+}
+.product-box__detail-button {
+    padding: 14px 28px;
+    border-radius: 8px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+.product-box__detail-button:hover {
+    background-color: #7d20f7;
+    text-decoration: underline;
+    transform: scale(1.1); 
+}

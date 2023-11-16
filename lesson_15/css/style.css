@@ -1,0 +1,121 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    background-color: grey;
+    color: white;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+
+    padding: 50px;
+}
+.flex-container {
+    display: inline-flex;
+    background-color: blue;
+    padding: 20px;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 20px;
+}
+.flex-container__item {
+    padding: 10px;
+    background-color: red;
+}
+
+.justify-align {
+    display: flex;
+    background-color: blue;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 150px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.flex-direction {
+    display: flex;
+    background-color: blue;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 350px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.flex-direction__item {
+    padding: 10px;
+    background-color: red;
+}
+
+.flex-elements {
+    display: flex;
+    background-color: blue;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 350px;
+    gap: 10px;
+}
+.flex-elements__item {
+    padding: 10px;
+    background-color: red;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+.flex-elements__item--align {
+    align-self: center;
+}
+.flex-elements__item:nth-child(1) {
+    order: 2;
+}
+.flex-elements__item:nth-child(2) {
+    order: 3;
+}
+.flex-elements__item:nth-child(3) {
+    order: 1;
+}
+
+.orders {
+    display: flex;
+    background-color: blue;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 350px;
+    gap: 10px;
+    /* align-items: flex-start; */
+    align-content: center;
+}
+.orders__item {
+    padding: 10px;
+    background-color: red;
+    flex-basis: 200px;
+}
+.orders__item:nth-child(3) {
+    order: 2;
+}
+.orders__item:nth-child(2) {
+    order: 1;
+}
+.orders__item:nth-child(1) {
+    order: 5;
+}.orders__item:nth-child(5) {
+    order: 4;
+}
+.orders__item:nth-child(4) {
+    order: 3;
+}
+
+.link {
+    padding: 15px;
+    font-size: 30px;
+    color: aquamarine;
+    background-color: blueviolet;
+}
+.link:hover {
+    transform: scale(1.2);
+    box-shadow: 1px 1px 10px 10px white;
+}
+
