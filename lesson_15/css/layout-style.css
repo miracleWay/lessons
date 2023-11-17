@@ -381,12 +381,13 @@
     align-items: center;
     flex-grow: 0;
     flex-shrink: 1;
-    width: 270px;
+    max-width: 270px;
 }
 .card__text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-width: 200px;
 }
 .card__title {
     color: #2A2F2F;
@@ -411,4 +412,6 @@
     background: url("../img/main-img/arrow.svg") center no-repeat;
     width: 20px;
     height: 20px;
+    margin-top: 15px;
+    align-self: flex-start;
 }
