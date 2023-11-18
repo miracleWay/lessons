@@ -356,10 +356,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    margin: 0 -25px;
 }
 .card {
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
 }
 .card__img {
     margin-bottom: 15px;
