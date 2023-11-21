@@ -1,0 +1,49 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    background-color: grey;
+    color: white;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    padding: 50px;
+}
+* {
+    margin-bottom: 15px;
+}
+label {
+    color: black;
+}
+.textarea {
+    resize: vertical;
+    border-radius: 0 !important;
+}
+.border {
+    border: 1px solid black;
+    width: 500px;
+}
+.border--modified {
+    border: 5px solid rgb(139, 13, 13);
+    width: 500px;
+}
+.border--modified2 {
+    border: 5px dashed green;
+}
+.title {
+    text-align: center;
+}
+input {
+    border-radius: 0 !important;
+}
+.button > button {
+    background-color: aqua;
+    display: inline-block;
+    color: black;
+    padding: 15px;
+}
+.button {
+    display: inline-block;
+}

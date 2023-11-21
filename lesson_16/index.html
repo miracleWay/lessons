@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/main-img/heart.svg" type="image/x-icon">
+    <title>Lesson_16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <div class="contact">
+                <div class="contact__header header-contact">
+                    <h4 class="header-contact__label">Contact Us</h4>
+                    <h2 class="header-contact__title">Request A Call Back !</h2>
+                </div>
+                <form class="contact__form form-contact" action="#" method="GET" enctype="multipart/form-data">
+                    <div class="form-contact__container">
+                        <input class="form-contact__item" type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-contact__container">
+                        <input class="form-contact__item" type="email" name="mail" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-contact__container">
+                        <input class="form-contact__item" type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-contact__container">
+                        <input class="form-contact__item" type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-contact__container--textarea">
+                        <textarea class="form-contact__textarea" name="message" placeholder="Message..."></textarea>
+                    </div>
+                    <button class="form-contact__btn-submit" type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="info">
+                <div class="info__header header-info">
+                    <h3 class="header-info__title">My Info</h3>
+                    <h4 class="header-info__subtitle">Add Address</h4>
+                </div>
+                <form action="#" class="info__form form-info">
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="name">First Name*</label>
+                        </div>
+                        <input id="name" class="form-info__item" type="text" name="name" placeholder="First Name"
+                            required>
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="surname">Last Name*</label>
+                        </div>
+                        <input class="form-info__item" id="surname" type="text" name="surname" placeholder="Last Name"
+                            required>
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="country">Country / Region*</label>
+                        </div>
+                        <input class="form-info__item" id="country" type="search" name="country"
+                            placeholder="Country / Region" required>
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="company">Company Name</label>
+                        </div>
+                        <input class="form-info__item" id="company" type="text" name="company"
+                            placeholder="Company (optional)">
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="address">Street Address*</label>
+                        </div>
+                        <input class="form-info__item" id="address" type="search" name="address"
+                            placeholder="House number and street name" required>
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="apt">Apt, suite, unit</label>
+                        </div>
+                        <input class="form-info__item" id="apt" type="text" name="apt"
+                            placeholder="apartment, suite, unit, etc. (optional)">
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="city">City*</label>
+                        </div>
+                        <input class="form-info__item" id="city" type="search" name="city" placeholder="Town / City"
+                            required>
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="state">State*</label>
+                        </div>
+                        <select class="form-info__item" name="state" id="state">
+                            <option value="">Alabama</option>
+                            <option value="">Alaska</option>
+                            <option value="">Arizona</option>
+                            <option value="">Arkansas</option>
+                            <option value="">California</option>
+                            <option value="">Colorado</option>
+                            <option value="">Connecticut</option>
+                            <option value="">Delaware</option>
+                            <option value="">Florida</option>
+                            <option value="">Georgia</option>
+                            <option value="">Hawaii</option>
+                            <option value="">Idaho</option>
+                            <option value="">Illinois</option>
+                            <option value="">Indiana</option>
+                            <option value="">Iowa</option>
+                            <option value="">Kansas</option>
+                            <option value="">Kentucky</option>
+                            <option value="">Louisiana</option>
+                            <option value="">Maine</option>
+                            <option value="">Maryland</option>
+                            <option value="">Massachusetts</option>
+                            <option value="">Michigan</option>
+                            <option value="">Minnesota</option>
+                            <option value="">Mississippi</option>
+                            <option value="">Missouri</option>
+                            <option value="">Montana</option>
+                            <option value="">Nebraska</option>
+                            <option value="">Nevada</option>
+                            <option value="">New Hampshire</option>
+                            <option value="">New Jersey</option>
+                            <option value="">New Mexico</option>
+                            <option value="">New York</option>
+                            <option value="">North Carolina</option>
+                            <option value="">North Dakota</option>
+                            <option value="">Ohio</option>
+                            <option value="">Oklahoma</option>
+                            <option value="">Oregon</option>
+                            <option value="">Pennsylvania</option>
+                            <option value="">Rhode Island</option>
+                            <option value="">South Carolina</option>
+                            <option value="">South Dakota</option>
+                            <option value="">Tennessee</option>
+                            <option value="">Texas</option>
+                            <option value="">Utah</option>
+                            <option value="">Vermont</option>
+                            <option value="">Virginia</option>
+                            <option value="">Washington</option>
+                            <option value="">West Virginia</option>
+                            <option value="">Wisconsin</option>
+                            <option value="">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="tel">Phone*</label>
+                        </div>
+                        <input id="tel" class="form-info__item" type="tel" name="tel" placeholder="Phone" required>
+                    </div>
+                    <div class="form-info__container">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="postal">Postal Code*</label>
+                        </div>
+                        <input id="postal" class="form-info__item" type="search" name="postal" placeholder="Postal Code"
+                            required>
+                    </div>
+                    <div class="form-info__container--textarea">
+                        <div class="form-info__box-label">
+                            <label class="form-info__label" for="instruction">Delivery Instruction</label>
+                        </div>
+                        <textarea id="instruction" class="form-info__textarea" name="instruction"
+                            placeholder="Delivery Instruction"></textarea>
+                    </div>
+                    <div class="form-info__container--checkbox">
+                        <input id="shipping" class="form-info__item--checkbox" type="checkbox" name="default">
+                        <label for="shipping" class="form-info__label--checkbox">Set as default shipping address</label>
+                        <input id="shipping" class="form-info__item--checkbox" type="checkbox" name="default">
+                        <label for="shipping" class="form-info__label--checkbox">Set as default billing address</label>
+                    </div>
+                    <div class="form-info__container--btn">
+                        <button class="form-info__btn" type="submit">Save</button>
+                        <button class="form-info__btn form-info__btn--reset" type="reset">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <!-- <a target="_blank" href="experiments.html">Експерименти</a> -->
+        </footer>
+    </div>
+</body>

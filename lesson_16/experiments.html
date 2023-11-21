@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/experiments-style.css">
+    <link rel="shortcut icon" href="img/main-img/heart.svg" type="image/x-icon">
+    <title>Lesson_16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <form action="#" method="get" enctype="multipart/form-data">
+                <div class="input">
+                    <label for="age">Це тип текст</label>
+                    <input id="age" type="text" name="age" placeholder="Твій вік" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <label for="email">Це тип email</label>
+                    <input id="email" type="email" name="email" placeholder="Твій email" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <label for="tel">Це тип tel</label>
+                    <input id="tel" type="tel" name="tel" placeholder="Твій phone number" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <label for="pass">Це тип password</label>
+                    <input id="pass" type="password" name="pass" placeholder="Твій password" autocomplete="off"
+                        required>
+                </div>
+                <div class="input">
+                    <label for="number">Це тип number</label>
+                    <input id="number" type="number" name="number" placeholder="Твій number" autocomplete="off"
+                        required>
+                </div>
+                <div class="input">
+                    <label for="color">Це тип color</label>
+                    <input id="color" type="color" name="color" placeholder="Твій color" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <label for="search">Це тип search</label>
+                    <input id="search" type="search" name="search" placeholder="Твій search" autocomplete="off"
+                        required>
+                </div>
+                <div class="input">
+                    <label for="date">Це тип date</label>
+                    <input id="date" type="date" name="date" placeholder="Твій date" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <label for="range">Це тип range</label>
+                    <input id="range" type="range" name="range" placeholder="Твій range" autocomplete="off" required>
+                </div>
+                <fieldset class="border">
+                    <legend class="title">Choose something</legend>
+                    <div class="input">
+                        <label for="check">First</label>
+                        <input id="check" type="checkbox" name="1" required>
+                        <label for="check2">Second</label>
+                        <input id="check2" type="checkbox" name="1" required checked>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border border--modified">
+                    <legend class="title">Choose something</legend>
+                    <div>
+                        <label for="radio">First</label>
+                        <input id="radio" type="radio" name="1" required checked>
+                        <label for="radio2">Second</label>
+                        <input id="radio2" type="radio" name="1" required>
+                    </div>
+                </fieldset>
+                <fieldset class="border border--modified2">
+                    <legend class="title">Choose something</legend>
+                    <div>
+                        <label for="radio3">Third</label>
+                        <input id="radio3" type="radio" name="2" required>
+                        <label for="radio4">Fourth</label>
+                        <input id="radio4" type="radio" name="2" required checked>
+                    </div>
+                </fieldset>
+                <div class="input">
+                    <label for="file">Add File</label>
+                    <input type="file" multiple accept=".svg">
+                </div>
+                <div class="input">
+                    <label for="textarea">Type text...</label>
+                    <textarea class="textarea" name="message" placeholder="write here something">text</textarea>
+                </div>
+                <div class="input">
+                    <label for="select">Choose</label>
+                    <select multiple name="list">
+                        <option value="">Some1</option>
+                        <option value="">Some2</option>
+                        <option selected value="">Some3</option>
+                    </select>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Send</button>
+                </div>
+                <div class="button">
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    </div>
+</body>
+
+</html>

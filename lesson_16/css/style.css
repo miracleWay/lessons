@@ -1,0 +1,209 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+/* .footer a {
+    background-color: red;
+} */
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    padding: 50px;
+}
+
+.contact {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+.header-contact__label {
+    color: #37393F;
+    font-family: "Inter", serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.header-contact__label::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+}
+.header-contact__title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    text-transform: capitalize;
+}
+.form-contact {
+    display: flex;
+    row-gap: 28px;
+    flex-wrap: wrap;
+    margin: 0 18px;
+    font-family: "Inter", serif;
+    font-size: 18px;
+}
+.form-contact *::placeholder {
+    color: #37393F;
+}
+.form-contact__container {
+    padding: 0 18px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+.form-contact__item {
+    border: 1px solid #DDD;
+    background-color: #F8F8F8;
+    width: 100%;
+    min-height: 65px;
+    padding: 0 40px;
+}
+.form-contact *::placeholder {
+    transition: opacity 0.3s;
+}
+*:focus::placeholder {
+    opacity: 0;
+}
+.form-contact__container--textarea {
+    flex-basis: 100%;
+    padding: 0 18px;
+}
+.form-contact__textarea {
+    border: 1px solid #DDD;
+    background-color: #F8F8F8;
+    width: 100%;
+    min-height: 222px;
+    padding: 22px 40px;
+    resize: none;
+}
+.form-contact__btn-submit {
+    padding: 22px 61px;
+    background-color: #6B77E5;
+    color: #FFF;
+    font-family: "Inter", serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+.form-contact__btn-submit:hover {
+    background-color: #3344d5;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 895px;
+    margin: 0 auto;
+    row-gap: 50px;
+}
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    row-gap: 20px;
+}
+.header-info__title {
+    color: #3C4242;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: 0.56px;
+}
+.header-info__subtitle {
+    color: #3C4242;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.52;
+    letter-spacing: 0.44px;
+}
+.info__form {
+}
+.form-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 21px;
+    row-gap: 28px;
+}
+.form-info__container {
+    padding: 0 21px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+.form-info__box-label {
+    margin-bottom: 10px;
+}
+.form-info__label {
+    color: #3C4242;
+    font-family: "CoreSansC", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+}
+.form-info__item {
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    width: 100%;
+    min-height: 55px;
+    padding: 0 22px;
+}
+.form-info__container--textarea {
+    flex-basis: 100%;
+    padding: 0 21px;
+}
+.form-info__textarea {
+    padding: 18px 22px;
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    resize: none;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 149px;
+}
+.form-info__container--checkbox {
+    display: inline-flex;
+    width: 150px;
+}
+.form-info__item--checkbox {
+}
+.form-info__label--checkbox {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 110px;
+    width: 110px;
+}
+.form-info__container--btn {
+    width: 100%;
+}
+.form-info__btn {
+    padding: 12px 40px;
+    border-radius: 8px;
+    background-color: #8A33FD;
+    color: #FFF;
+    font-family: "Causten", sans-serif;
+    font-size: 20.087px;
+    font-weight: 600;
+}
+.form-info__btn--reset {
+    background-color: #F6F6F6;
+    color: #807D7E;
+}
