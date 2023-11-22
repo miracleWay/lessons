@@ -43,7 +43,7 @@
                     <h3 class="header-info__title">My Info</h3>
                     <h4 class="header-info__subtitle">Add Address</h4>
                 </div>
-                <form action="#" class="info__form form-info">
+                <form action="#" class="info__form form-info" enctype="multipart/form-data" method="get">
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="name">First Name*</label>
@@ -171,15 +171,197 @@
                             placeholder="Delivery Instruction"></textarea>
                     </div>
                     <div class="form-info__container--checkbox">
-                        <input id="shipping" class="form-info__item--checkbox" type="checkbox" name="default">
-                        <label for="shipping" class="form-info__label--checkbox">Set as default shipping address</label>
-                        <input id="shipping" class="form-info__item--checkbox" type="checkbox" name="default">
-                        <label for="shipping" class="form-info__label--checkbox">Set as default billing address</label>
+                        <div class="form-info__wrapper--checkbox">
+                            <input id="shipping" class="form-info__item--checkbox" type="checkbox" name="default">
+                            <label for="shipping" class="form-info__label--checkbox">Set as default shipping
+                                address</label>
+                        </div>
+                        <div class="form-info__wrapper--checkbox">
+                            <input id="billing" class="form-info__item--checkbox" type="checkbox" name="default">
+                            <label for="billing" class="form-info__label--checkbox">Set as default billing
+                                address</label>
+                        </div>
                     </div>
                     <div class="form-info__container--btn">
                         <button class="form-info__btn" type="submit">Save</button>
                         <button class="form-info__btn form-info__btn--reset" type="reset">Cancel</button>
                     </div>
+                </form>
+            </div>
+
+            <div class="checkout">
+                <h3 class="checkout__title">Check Out</h3>
+                <form class="checkout__billing billing-form" action="#" enctype="multipart/form-data" method="GET">
+                    <h4 class="billing-form__title">Billing Details</h4>
+                    <div class="billing-form__first-container first-container">
+                        <div class="first-container__wrapper">
+                            <div class="first-container__label-box">
+                                <label for="name" class="first-container__label">First Name*</label>
+                            </div>
+                            <input class="first-container__input" id="name" type="text" name="name"
+                                placeholder="First Name" required>
+                        </div>
+                        <div class="first-container__wrapper">
+                            <div class="first-container__label-box">
+                                <label for="surname" class="first-container__label">Last Name*</label>
+                            </div>
+                            <input class="first-container__input" id="surname" type="text" name="surname"
+                                placeholder="Last Name" required>
+                        </div>
+                        <div class="first-container__wrapper">
+                            <div class="first-container__label-box">
+                                <label for="country" class="first-container__label">Country / Region*</label>
+                            </div>
+                            <input class="first-container__input" id="country" type="search" name="country"
+                                placeholder="Country / Region" required>
+                        </div>
+                        <div class="first-container__wrapper">
+                            <div class="first-container__label-box">
+                                <label for="company" class="first-container__label">Company Name</label>
+                            </div>
+                            <input class="first-container__input" id="company" type="text" name="company"
+                                placeholder="Company (optional)">
+                        </div>
+                        <div class="first-container__wrapper">
+                            <div class="first-container__label-box">
+                                <label for="address" class="first-container__label">Street Address*</label>
+                            </div>
+                            <input class="first-container__input" id="address" type="text" name="address"
+                                placeholder="House number and street name" required>
+                        </div>
+                        <div class="first-container__wrapper">
+                            <div class="first-container__label-box">
+                                <label for="apt" class="first-container__label">Apt, suite, unit</label>
+                            </div>
+                            <input class="first-container__input" id="apt" type="text" name="apt"
+                                placeholder="apartment, suite, unit, etc. (optional)">
+                        </div>
+                    </div>
+
+                    <div class="billing-form__first-container second-container">
+                        <div class="second-container__wrapper">
+                            <div class="second-container__label-box">
+                                <label for="city" class="second-container__label">City*</label>
+                            </div>
+                            <input class="second-container__input" id="city" type="search" name="city"
+                                placeholder="Town / City" required>
+                        </div>
+                        <div class="second-container__wrapper">
+                            <div class="second-container__label-box">
+                                <label for="state" class="second-container__label">State*</label>
+                            </div>
+                            <input class="second-container__input" id="state" type="search" name="state"
+                                placeholder="State" required>
+                        </div>
+                        <div class="second-container__wrapper">
+                            <div class="second-container__label-box">
+                                <label for="postal" class="second-container__label">Postal Code*</label>
+                            </div>
+                            <input class="second-container__input" id="postal" type="search" name="postal"
+                                placeholder="Postal Code" required>
+                        </div>
+                        <div class="second-container__wrapper">
+                            <div class="second-container__label-box">
+                                <label for="phone" class="second-container__label">Phone*</label>
+                            </div>
+                            <input class="second-container__input second-container__input--phone" id="phone" type="tel"
+                                name="phone" placeholder="Phone" required>
+                        </div>
+                    </div>
+
+                    <div class="billing-form__first-container first-container-box-btn">
+                        <button class="first-container-box-btn__btn" type="button">Continue to delivery</button>
+                    </div>
+
+                    <div class="billing-form__first-container first-container-box-checkbox">
+                        <input class="first-container-box-checkbox__input" id="save-info" type="checkbox">
+                        <label class="first-container-box-checkbox__label" for="save-info">Save my information for a
+                            faster checkout</label>
+                    </div>
+                </form>
+
+                <form class="checkout__shipping shipping-form" action="#" method="GET" enctype="multipart/form-data">
+                    <div class="shipping-form__border">
+                        <h4 class="shipping-form__title">Shipping Address</h4>
+                        <h5 class="shipping-form__subtitle">Select the address that matches your card or payment method.
+                        </h5>
+                        <div class="shipping-form__wrapper">
+                            <div class="shipping-form__body">
+                                <input class="shipping-form__input" id="same" name="shipping" value="same" type="radio">
+                                <label class="shipping-form__label" for="same">Same as Billing address</label>
+                            </div>
+                            <div class="shipping-form__body">
+                                <input class="shipping-form__input" id="different" name="shipping" value="different"
+                                    type="radio" type="radio">
+                                <label class="shipping-form__label" for="different">Use a different shipping
+                                    address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping-form__border">
+                        <h4 class="shipping-form__title shipping-form__title--margin">Shipping Methods</h4>
+                        <div class="shipping-form__wrapper">
+                            <div class="shipping-form__arrives arrives-body">
+                                <p class="arrives-body__text">Arrives by Monday, June 7</p>
+                            </div>
+                            <div class="shipping-form__delivery delivery-body">
+                                <div class="delivery-body__row">
+                                    <p class="delivery-body__text">Delivery Charges</p>
+                                    <p class="delivery-body__price">$5.00</p>
+                                </div>
+                                <p class="delivery-body__label">Additional fess may apply</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h4 class="shipping-form__title">Payment Address</h4>
+                    <h5 class="shipping-form__subtitle">All transactions are secure and encrypted.</h5>
+                    <div class="shipping-form__wrapper">
+                        <div class="shipping-form__body shipping-form__body--card">
+                            <div class="shipping-form__payment-body">
+                                <input class="shipping-form__payment-input" id="card" name="payment" type="radio">
+                                <label class="shipping-form__payment-label" for="card">Credit Card</label>
+                                <p class="shipping-form__payment-text">We accept all major credit cards.</p>
+                            </div>
+                            <div class="shipping-form__img">
+                                <img src="img/main-img/google-pay.svg" alt="Google Pay">
+                                <img src="img/main-img/visa.svg" alt="Visa">
+                                <img src="img/main-img/paypal.svg" alt="PayPal">
+                                <img src="img/main-img/paypass.svg" alt="paypass">
+                            </div>
+                            <div class="shipping-form__payment-box">
+                                <div class="shipping-form__payment-wrapper">
+                                    <input class="shipping-form__payment-card" type="tel" placeholder="Card number">
+                                </div>
+                                <div class="shipping-form__payment-wrapper">
+                                    <input class="shipping-form__payment-card" type="text" placeholder="Name of card">
+                                </div>
+                                <div class="shipping-form__payment-wrapper">
+                                    <input class="shipping-form__payment-card" type="text"
+                                        placeholder="Expiration date (MM/YY)">
+                                </div>
+                                <div class="shipping-form__payment-wrapper">
+                                    <input class="shipping-form__payment-card" type="password"
+                                        placeholder="Security Code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shipping-form__body shipping-form__payment-body">
+                            <input class="shipping-form__payment-input" id="cash" name="payment" type="radio">
+                            <label class="shipping-form__payment-label" for="cash">Cash on delivery</label>
+                            <p class="shipping-form__payment-text">Pay with cash upon delivery.</p>
+                        </div>
+                        <div class="shipping-form__body">
+                            <input class="shipping-form__payment-input" id="paypal" name="payment" type="radio">
+                            <label class="shipping-form__payment-label shipping-form__payment-label--top" for="paypal">Paypol</label>
+                        </div>
+                    </div>
+
+                    <div class="shipping-form__wrapper--btn">
+                        <button class="shipping-form__btn-pay" type="submit">Pay Now</button>
+                    </div>
+
                 </form>
             </div>
 

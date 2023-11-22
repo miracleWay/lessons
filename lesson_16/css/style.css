@@ -71,6 +71,7 @@
     background-color: #F8F8F8;
     width: 100%;
     min-height: 65px;
+    min-width: 200px;
     padding: 0 40px;
 }
 .form-contact *::placeholder {
@@ -111,6 +112,7 @@
     max-width: 895px;
     margin: 0 auto;
     row-gap: 50px;
+    margin-bottom: 100px;
 }
 .header-info {
     display: flex;
@@ -134,12 +136,10 @@
     line-height: 1.52;
     letter-spacing: 0.44px;
 }
-.info__form {
-}
 .form-info {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 21px;
+    margin: 0 -21px;
     row-gap: 28px;
 }
 .form-info__container {
@@ -164,6 +164,7 @@
     width: 100%;
     min-height: 55px;
     padding: 0 22px;
+    min-width: 200px;
 }
 .form-info__container--textarea {
     flex-basis: 100%;
@@ -180,19 +181,59 @@
     min-height: 149px;
 }
 .form-info__container--checkbox {
-    display: inline-flex;
-    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Causten", sans-serif;
+    font-size: 20.087px;
+    color: #3C4242;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 350px;
+    padding: 0 21px;
+    row-gap: 12px;
+}
+.form-info__wrapper--checkbox {
+    position: relative;
 }
 .form-info__item--checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.form-info__item--checkbox:focus-visible + .form-info__label--checkbox {
+    outline: 1px solid black;
+    border-radius: 8px;
+}
+.form-info__item--checkbox:checked + .form-info__label--checkbox::before {
+    background: url("../img/main-img/ok.png") center / 20px no-repeat;
+}
+.form-info__label--checkbox::before {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    content: "";
+    display: inline-block;
+    outline: 3px solid #BEBCBD;
+    border-radius: 1px;
+}
+.form-info__label--checkbox {
+    cursor: pointer;
+    display: inline-flex;
+    gap: 11px;
 }
 .form-info__label--checkbox {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 110px;
-    width: 110px;
+    flex-basis: 300px;
 }
 .form-info__container--btn {
-    width: 100%;
+    padding: 0 21px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: 100%;
 }
 .form-info__btn {
     padding: 12px 40px;
@@ -203,7 +244,377 @@
     font-size: 20.087px;
     font-weight: 600;
 }
+.form-info__btn:hover {
+    background-color: rgb(145, 51, 213);
+}
 .form-info__btn--reset {
     background-color: #F6F6F6;
     color: #807D7E;
+}
+.form-info__btn--reset:hover {
+    background-color: #e7e3e3;
+}
+
+
+
+.checkout {
+    max-width: 840px;
+    margin: 0 auto;
+    font-family: "Causten", sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.checkout__title {
+    font-family: "CoreSansC", sans-serif;
+    color: #3C4242;
+    font-size: 28px;
+    font-weight: 600px;
+    line-height: 1.19;
+    letter-spacing: 0.56px;
+}
+.checkout__title::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #8A33FD;
+    margin-right: 15px;
+}
+.checkout__billing {
+}
+.billing-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    border-bottom: 1px solid #EDEEF2;
+    padding-bottom: 32px;
+}
+.billing-form__title {
+    font-family: "CoreSansC", sans-serif;
+    color: #3C4242;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.52;
+    letter-spacing: 0.44px;
+    margin-bottom: 50px;
+}
+.billing-form__first-container {
+}
+.first-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    margin: 0 -38px;
+}
+.first-container__wrapper {
+    padding: 0 38px;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.first-container__label-box {
+}
+.first-container__label {
+    color: #3C4242;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+}
+.first-container__input {
+    padding: 16px 20px;
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    width: 100%;
+    min-width: 200px;
+}
+.second-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    margin: 0 -38px;
+}
+.second-container__wrapper {
+    padding: 0 38px;
+    flex: 0 1 33.333%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.second-container__label-box {
+}
+.second-container__label {
+    color: #3C4242;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+}
+.second-container__input {
+    padding: 16px 20px;
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    width: 100%;
+    min-width: 200px;
+}
+.second-container__input--phone {
+    min-width: 400px; 
+}
+/* Ширина згідно макету, але по логіці якщо додадуться ще пункти
+то буде не гарно. */
+.first-container-box-btn {
+}
+.first-container-box-btn__btn {
+    padding: 16px 20px;
+    border-radius: 8px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+.first-container-box-btn__btn:hover {
+    background-color: rgb(145, 51, 213);
+}
+.first-container-box-checkbox {
+    position: relative;
+}
+.first-container-box-checkbox__input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.first-container-box-checkbox__input:focus-visible + .first-container-box-checkbox__label {
+    outline: 1px solid black;
+    border-radius: 8px;
+}
+.first-container-box-checkbox__input:checked + .first-container-box-checkbox__label::before {
+    background: url("../img/main-img/ok.png") center / 20px no-repeat;
+}
+.first-container-box-checkbox__label {
+    color: #3C4242;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 10px;
+}
+.first-container-box-checkbox__label::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    outline: 2px solid #BEBCBD;
+    border-radius: 1px;
+}
+.billing__shipping {
+}
+.shipping-form {
+    display: flex;
+    flex-direction: column;
+}
+.shipping-form__title {
+    font-family: "CoreSansC", sans-serif;
+    color: #3C4242;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.52;
+    letter-spacing: 0.44px;
+    margin-bottom: 8px;
+}
+.shipping-form__subtitle {
+    color: #3C4242;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.shipping-form__wrapper {
+    padding: 25px 28px;
+    border-radius: 12px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+.shipping-form__border:not(:last-child) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #bebcbd49;
+}
+.shipping-form__body {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    display: inline-flex;
+}
+.shipping-form__body:not(:last-child) {
+    border-bottom: 1px solid #BEBCBD;
+}
+.shipping-form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.shipping-form__input:checked + .shipping-form__label::before {
+    background-color: #807D7E;
+}
+.shipping-form__label::before {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    content: "";
+    display: inline-block;
+    outline: 1px solid #3C4242;
+    border-radius: 50%;
+}
+.shipping-form__label {
+    color: #3C4242;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 19px;
+}
+.shipping-form__title--margin {
+    margin-bottom: 22px;
+}
+.shipping-form__arrives {
+}
+.arrives-body {
+    border-bottom: 1px solid #BEBCBD;
+    padding: 25px 0;
+}
+.arrives-body__text {
+    color: #3C4242;
+    font-size: 20px;
+    font-weight: 700;
+}
+.shipping-form__delivery {
+}
+.delivery-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-top: 25px;
+}
+.delivery-body__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.delivery-body__text {
+    color: #3C4242;
+    font-size: 20px;
+    font-weight: 700;
+}
+.delivery-body__price {
+    color: #3C4242;
+    font-size: 20px;
+    font-weight: 700;
+}
+.delivery-body__label {
+    color: #807D7E;
+    font-size: 16px;
+    font-weight: 500;
+}
+.shipping-form__body--card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.shipping-form__img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.shipping-form__payment-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.shipping-form__payment-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.shipping-form__payment-input:checked + .shipping-form__payment-label::before {
+background-color: #807D7E;
+}
+.shipping-form__payment-label {
+    color: #3C4242;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.shipping-form__payment-label:not(:last-child){
+    margin-bottom: 8px;
+}
+.shipping-form__payment-label::before {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    content: "";
+    display: inline-block;
+    outline: 1px solid #3C4242;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    top: 10px;
+}
+.shipping-form__payment-text {
+    color: #3C4242;
+    font-size: 16px;
+    margin-left: 34px;
+}
+.shipping-form__payment-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    row-gap: 28px;
+}
+.shipping-form__payment-wrapper {
+    padding: 0 15px;
+    flex: 0 1 50%;
+}
+.shipping-form__payment-card {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid #3C4242;
+    min-width: 200px;
+}
+.shipping-form__payment-label--top::before {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    content: "";
+    display: inline-block;
+    outline: 1px solid #3C4242;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    top: 0;
+}
+.shipping-form__wrapper--btn {
+    margin-top: 66px;
+}
+.shipping-form__btn-pay {
+    padding: 16px 20px;
+    border-radius: 8px;
+    background-color: #8A33FD;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+.shipping-form__btn-pay:hover {
+    background-color: rgb(145, 51, 213);
 }
