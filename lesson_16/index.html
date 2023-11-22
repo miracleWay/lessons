@@ -46,52 +46,45 @@
                 <form action="#" class="info__form form-info" enctype="multipart/form-data" method="get">
                     <div class="form-info__container">
                         <div class="form-info__box-label">
-                            <label class="form-info__label" for="name">First Name*</label>
+                            <label class="form-info__label" for="first-name1">First Name*</label>
                         </div>
-                        <input id="name" class="form-info__item" type="text" name="name" placeholder="First Name"
-                            required>
+                        <input id="first-name1" class="form-info__item" type="text" name="name" placeholder="First Name" required>
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="surname">Last Name*</label>
                         </div>
-                        <input class="form-info__item" id="surname" type="text" name="surname" placeholder="Last Name"
-                            required>
+                        <input class="form-info__item" id="surname" type="text" name="last-name" placeholder="Last Name" required>
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="country">Country / Region*</label>
                         </div>
-                        <input class="form-info__item" id="country" type="search" name="country"
-                            placeholder="Country / Region" required>
+                        <input class="form-info__item" id="country" type="search" name="country/region" placeholder="Country / Region" required>
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="company">Company Name</label>
                         </div>
-                        <input class="form-info__item" id="company" type="text" name="company"
-                            placeholder="Company (optional)">
+                        <input class="form-info__item" id="company" type="text" name="company-name" placeholder="Company (optional)">
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="address">Street Address*</label>
                         </div>
-                        <input class="form-info__item" id="address" type="search" name="address"
-                            placeholder="House number and street name" required>
+                        <input class="form-info__item" id="address" type="search" name="address-address" placeholder="House number and street name" required>
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="apt">Apt, suite, unit</label>
                         </div>
-                        <input class="form-info__item" id="apt" type="text" name="apt"
-                            placeholder="apartment, suite, unit, etc. (optional)">
+                        <input class="form-info__item" id="apt" type="text" name="apt-suite-unit" placeholder="apartment, suite, unit, etc. (optional)">
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="city">City*</label>
                         </div>
-                        <input class="form-info__item" id="city" type="search" name="city" placeholder="Town / City"
-                            required>
+                        <input class="form-info__item" id="city" type="search" name="city/town" placeholder="Town / City" required>
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
@@ -154,32 +147,28 @@
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="tel">Phone*</label>
                         </div>
-                        <input id="tel" class="form-info__item" type="tel" name="tel" placeholder="Phone" required>
+                        <input id="tel" class="form-info__item" type="tel" name="telephone" placeholder="Phone" required>
                     </div>
                     <div class="form-info__container">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="postal">Postal Code*</label>
                         </div>
-                        <input id="postal" class="form-info__item" type="search" name="postal" placeholder="Postal Code"
-                            required>
+                        <input id="postal" class="form-info__item" type="search" name="postal-code" placeholder="Postal Code" required>
                     </div>
                     <div class="form-info__container--textarea">
                         <div class="form-info__box-label">
                             <label class="form-info__label" for="instruction">Delivery Instruction</label>
                         </div>
-                        <textarea id="instruction" class="form-info__textarea" name="instruction"
-                            placeholder="Delivery Instruction"></textarea>
+                        <textarea id="instruction" class="form-info__textarea" name="delivery-instruction" placeholder="Delivery Instruction"></textarea>
                     </div>
                     <div class="form-info__container--checkbox">
                         <div class="form-info__wrapper--checkbox">
                             <input id="shipping" class="form-info__item--checkbox" type="checkbox" name="default">
-                            <label for="shipping" class="form-info__label--checkbox">Set as default shipping
-                                address</label>
+                            <label for="shipping" class="form-info__label--checkbox">Set as default shipping address</label>
                         </div>
                         <div class="form-info__wrapper--checkbox">
                             <input id="billing" class="form-info__item--checkbox" type="checkbox" name="default">
-                            <label for="billing" class="form-info__label--checkbox">Set as default billing
-                                address</label>
+                            <label for="billing" class="form-info__label--checkbox">Set as default billing address</label>
                         </div>
                     </div>
                     <div class="form-info__container--btn">
@@ -198,43 +187,37 @@
                             <div class="first-container__label-box">
                                 <label for="first-name" class="first-container__label">First Name*</label>
                             </div>
-                            <input class="first-container__input" id="first-name" type="text" name="name"
-                                placeholder="First Name" required>
+                            <input class="first-container__input" id="first-name" type="text" name="name" placeholder="First Name" required>
                         </div>
                         <div class="first-container__wrapper">
                             <div class="first-container__label-box">
                                 <label for="surname" class="first-container__label">Last Name*</label>
                             </div>
-                            <input class="first-container__input" id="surname" type="text" name="surname"
-                                placeholder="Last Name" required>
+                            <input class="first-container__input" id="surname" type="text" name="last-surname" placeholder="Last Name" required>
                         </div>
                         <div class="first-container__wrapper">
                             <div class="first-container__label-box">
                                 <label for="country" class="first-container__label">Country / Region*</label>
                             </div>
-                            <input class="first-container__input" id="country" type="search" name="country"
-                                placeholder="Country / Region" required>
+                            <input class="first-container__input" id="country" type="search" name="country/region2" placeholder="Country / Region" required>
                         </div>
                         <div class="first-container__wrapper">
                             <div class="first-container__label-box">
                                 <label for="company" class="first-container__label">Company Name</label>
                             </div>
-                            <input class="first-container__input" id="company" type="text" name="company"
-                                placeholder="Company (optional)">
+                            <input class="first-container__input" id="company" type="text" name="company-name" placeholder="Company (optional)">
                         </div>
                         <div class="first-container__wrapper">
                             <div class="first-container__label-box">
                                 <label for="address" class="first-container__label">Street Address*</label>
                             </div>
-                            <input class="first-container__input" id="address" type="text" name="address"
-                                placeholder="House number and street name" required>
+                            <input class="first-container__input" id="address" type="text" name="address" placeholder="House number and street name" required>
                         </div>
                         <div class="first-container__wrapper">
                             <div class="first-container__label-box">
                                 <label for="apt" class="first-container__label">Apt, suite, unit</label>
                             </div>
-                            <input class="first-container__input" id="apt" type="text" name="apt"
-                                placeholder="apartment, suite, unit, etc. (optional)">
+                            <input class="first-container__input" id="apt" type="text" name="apt" placeholder="apartment, suite, unit, etc. (optional)">
                         </div>
                     </div>
 
@@ -243,29 +226,25 @@
                             <div class="second-container__label-box">
                                 <label for="city" class="second-container__label">City*</label>
                             </div>
-                            <input class="second-container__input" id="city" type="search" name="city"
-                                placeholder="Town / City" required>
+                            <input class="second-container__input" id="city" type="search" name="town-city" placeholder="Town / City" required>
                         </div>
                         <div class="second-container__wrapper">
                             <div class="second-container__label-box">
                                 <label for="state" class="second-container__label">State*</label>
                             </div>
-                            <input class="second-container__input" id="state" type="search" name="state"
-                                placeholder="State" required>
+                            <input class="second-container__input" id="state" type="search" name="state2" placeholder="State" required>
                         </div>
                         <div class="second-container__wrapper">
                             <div class="second-container__label-box">
                                 <label for="postal" class="second-container__label">Postal Code*</label>
                             </div>
-                            <input class="second-container__input" id="postal" type="search" name="postal"
-                                placeholder="Postal Code" required>
+                            <input class="second-container__input" id="postal" type="search" name="postal-code" placeholder="Postal Code" required>
                         </div>
                         <div class="second-container__wrapper">
                             <div class="second-container__label-box">
                                 <label for="phone" class="second-container__label">Phone*</label>
                             </div>
-                            <input class="second-container__input second-container__input--phone" id="phone" type="tel"
-                                name="phone" placeholder="Phone" required>
+                            <input class="second-container__input second-container__input--phone" id="phone" type="tel" name="phone-number" placeholder="Phone" required>
                         </div>
                     </div>
 
@@ -275,26 +254,22 @@
 
                     <div class="billing-form__first-container first-container-box-checkbox">
                         <input class="first-container-box-checkbox__input" id="save-info" type="checkbox">
-                        <label class="first-container-box-checkbox__label" for="save-info">Save my information for a
-                            faster checkout</label>
+                        <label class="first-container-box-checkbox__label" for="save-info">Save my information for a faster checkout</label>
                     </div>
                 </form>
 
                 <form class="checkout__shipping shipping-form" action="#" method="GET" enctype="multipart/form-data">
                     <div class="shipping-form__border">
                         <h4 class="shipping-form__title">Shipping Address</h4>
-                        <h5 class="shipping-form__subtitle">Select the address that matches your card or payment method.
-                        </h5>
+                        <h5 class="shipping-form__subtitle">Select the address that matches your card or payment method.</h5>
                         <div class="shipping-form__wrapper">
                             <div class="shipping-form__body">
                                 <input class="shipping-form__input" id="same" name="shipping" value="same" type="radio">
                                 <label class="shipping-form__label" for="same">Same as Billing address</label>
                             </div>
                             <div class="shipping-form__body">
-                                <input class="shipping-form__input" id="different" name="shipping" value="different"
-                                    type="radio" type="radio">
-                                <label class="shipping-form__label" for="different">Use a different shipping
-                                    address</label>
+                                <input class="shipping-form__input" id="different" name="shipping" value="different" type="radio" type="radio">
+                                <label class="shipping-form__label" for="different">Use a different shipping address</label>
                             </div>
                         </div>
                     </div>
