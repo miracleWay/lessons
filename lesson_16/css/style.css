@@ -2,9 +2,9 @@
 
 @import url("reset.css");
 
-/* .footer a {
+.footer a {
     background-color: red;
-} */
+}
 .wrapper {
     min-height: 100%;
     overflow: clip;
@@ -270,7 +270,7 @@
     font-family: "CoreSansC", sans-serif;
     color: #3C4242;
     font-size: 28px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 1.19;
     letter-spacing: 0.56px;
 }
