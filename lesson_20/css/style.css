@@ -198,10 +198,10 @@ textarea {
     transition: left 0.3s;
     background-color: rgb(213, 131, 23);
   }
-}
-@media (max-width: 990.98px) {
-  .menu__open .menu__body,
   .menu__open .menu__body::before {
+    left: 0;
+  }
+  .menu__open .menu__body {
     left: 0;
   }
 }

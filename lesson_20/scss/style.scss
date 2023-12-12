@@ -79,17 +79,24 @@
                 z-index: 2;
                 transition: left 0.3s;
                 background-color: rgba(213, 131, 23, 1);
+
+                .menu__open & {
+                    left: 0;
+                }
             }
-        }
-    }
-    &__open {
-        @media (max-width: 990.98px) {
-            .menu__body,
-            .menu__body::before {
+            .menu__open & {
                 left: 0;
             }
         }
     }
+    // &__open {
+    //     @media (max-width: 990.98px) {
+    //         .menu__body,
+    //         .menu__body::before {
+    //             left: 0;
+    //         }
+    //     }
+    // }
 
     // .menu__list
 
