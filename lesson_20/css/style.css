@@ -114,6 +114,10 @@ textarea {
   font-weight: 800;
   font-style: normal;
 }
+.menu-open body {
+  overflow: hidden;
+}
+
 .wrapper {
   overflow: clip;
   display: -webkit-box;
@@ -172,6 +176,11 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+@media (max-width: 480px) {
+  .header__logo {
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 990.98px) {
   .menu__body {
@@ -198,10 +207,10 @@ textarea {
     transition: left 0.3s;
     background-color: rgb(213, 131, 23);
   }
-  .menu__open .menu__body::before {
+  .menu-open .menu__body::before {
     left: 0;
   }
-  .menu__open .menu__body {
+  .menu-open .menu__body {
     left: 0;
   }
 }
@@ -322,6 +331,13 @@ textarea {
   position: relative;
   z-index: 5;
 }
+@media (max-width: 480px) {
+  .actions {
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+}
 .actions__fav, .actions__bag {
   position: relative;
   cursor: pointer;
@@ -420,6 +436,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   row-gap: 21px;
 }
 .popular__title {

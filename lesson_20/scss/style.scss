@@ -5,6 +5,10 @@
 // Компоненти
 @import "_common.scss";
 
+.menu-open body {
+    overflow: hidden;
+}
+
 .wrapper {
     overflow: clip;
     display: flex;
@@ -53,6 +57,10 @@
         position: relative;
         z-index: 5;
         flex-shrink: 0;
+
+        @media (max-width: 480px) {
+            font-size: 20px;
+        }
     }
 }
 .menu {
@@ -80,11 +88,11 @@
                 transition: left 0.3s;
                 background-color: rgba(213, 131, 23, 1);
 
-                .menu__open & {
+                .menu-open & {
                     left: 0;
                 }
             }
-            .menu__open & {
+            .menu-open & {
                 left: 0;
             }
         }
@@ -204,6 +212,9 @@
     column-gap: 26px;
     position: relative;
     z-index: 5;
+    @media (max-width: 480px) {
+        column-gap: 16px;
+    }
 
     // .actions__fav
     &__fav,
@@ -291,6 +302,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         row-gap: 21px;
     }
 
