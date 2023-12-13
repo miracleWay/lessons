@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <form class="header__container" enctype="multipart/form-data" method="get" action="#">
+            <div class="header__container">
                 <a class="header__logo" href="#">
                     <img src="img/header-img/logo.webp" alt="logo">
                 </a>
@@ -51,10 +51,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header__search">
+                <form class="header__search" enctype="multipart/form-data" method="get" action="#">
                     <img src="img/header-img/search.svg" alt="search">
                     <input type="search" placeholder="Search" name="search">
-                </div>
+                </form>
                 <div class="header__links">
                     <a href="#" class="header__fav">
                         <img src="img/header-img/heart.svg" alt="favourite">
@@ -65,11 +65,11 @@
                     <a href="#" class="header__bag">
                         <img src="img/header-img/shopping-cart.svg" alt="shopping cart">
                     </a>
-                    <button class="icon-menu">
+                    <button type="menu" class="icon-menu">
                         <span></span>
                     </button>
                 </div>
-            </form>
+            </div>
         </div>
         <div class="page">
             <div class="page__adv adv">
@@ -101,39 +101,47 @@
             <div class="page__arrival arrival">
                 <div class="arrival__container">
                     <h2 class="arrival__title">New Arrival</h2>
-                    <div class="arrival__cards cards">
-                        <div class="cards__item">
-                            <a class="cards__img" href="#">
-                                <img src="img/main-img/arrival-1.webp" alt="Joggers">
-                            </a>
-                            <h4 class="cards__title">
-                                <a href="#">Knitted Joggers</a>
-                            </h4>
+                    <div class="arrival__body">
+                        <div class="cards">
+                            <div class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-1.webp" alt="Joggers">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Knitted Joggers</a>
+                                </h4>
+                            </div>
+                            <div class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-2.webp" alt="Sleeve">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Full Sleeve</a>
+                                </h4>
+                            </div>
+                            <div class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-3.webp" alt="Shirts">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Active T-Shirts</a>
+                                </h4>
+                            </div>
+                            <div class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-4.webp" alt="Shirts">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Urban Shirts</a>
+                                </h4>
+                            </div>
                         </div>
-                        <div class="cards__item">
-                            <a class="cards__img" href="#">
-                                <img src="img/main-img/arrival-2.webp" alt="Sleeve">
-                            </a>
-                            <h4 class="cards__title">
-                                <a href="#">Full Sleeve</a>
-                            </h4>
-                        </div>
-                        <div class="cards__item">
-                            <a class="cards__img" href="#">
-                                <img src="img/main-img/arrival-3.webp" alt="Shirts">
-                            </a>
-                            <h4 class="cards__title">
-                                <a href="#">Active T-Shirts</a>
-                            </h4>
-                        </div>
-                        <div class="cards__item">
-                            <a class="cards__img" href="#">
-                                <img src="img/main-img/arrival-4.webp" alt="Shirts">
-                            </a>
-                            <h4 class="cards__title">
-                                <a href="#">Urban Shirts</a>
-                            </h4>
-                        </div>
+                        <button class="arrival__slider-btn">
+                            <img src="img/main-img/arrow.svg" alt="Slider left">
+                        </button>
+                        <button class="arrival__slider-btn arrival__slider-btn--rotate">
+                            <img src="img/main-img/arrow.svg" alt="Slider right">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -174,7 +182,8 @@
                                 <h3 class="cards-saving__title">Cargo Joggers</h3>
                                 <p class="cards-saving__label">Move with style & comfort</p>
                                 <p class="cards-saving__discount">UPTO 50% OFF</p>
-                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg" alt="arrow down">
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg"
+                                    alt="arrow down">
                                 <a href="#" class="cards-saving__link cards-saving__link--dark">SHOP NOW</a>
                             </div>
                         </div>
@@ -186,7 +195,8 @@
                                 <h3 class="cards-saving__title">Urban Shirts</h3>
                                 <p class="cards-saving__label">Live In Confort</p>
                                 <p class="cards-saving__discount">FLAT 60% OFF</p>
-                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg" alt="arrow down">
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg"
+                                    alt="arrow down">
                                 <a href="#" class="cards-saving__link cards-saving__link--dark">SHOP NOW</a>
                             </div>
                         </div>
@@ -198,7 +208,8 @@
                                 <h3 class="cards-saving__title">Oversized T-Shirts</h3>
                                 <p class="cards-saving__label">Street Style Icon</p>
                                 <p class="cards-saving__discount">FLAT 60% OFF</p>
-                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg" alt="arrow down">
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg"
+                                    alt="arrow down">
                                 <a href="#" class="cards-saving__link cards-saving__link--dark">SHOP NOW</a>
                             </div>
                         </div>
