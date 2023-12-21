@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/main-img/heart.svg" type="image/x-icon">
+    <title>Lesson_21</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="img/header-img/logo.webp" alt="Euphoria logo">
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--weight" href="#">Shop</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Men</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Women</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Combos</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Joggers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <form aria-label="Search on website" enctype="multipart/form-data" method="GET" action="#">
+                        <button type="button"><img src="img/header-img/search.svg" alt="Search on website"></button>
+                        <input name="search" type="search" placeholder="Search">
+                    </form>
+                </div>
+                <div class="header__actions actions">
+                    <a href="#" class="actions__item">
+                        <img src="img/header-img/header-fav.svg" alt="Favourite products">
+                    </a>
+                    <a href="#" class="actions__item">
+                        <img src="img/header-img/header-user.svg" alt="Personal account">
+                    </a>
+                    <a href="#" class="actions__item">
+                        <img src="img/header-img/header-cart.svg" alt="My bag">
+                    </a>
+                    <button class="icon-menu" type="menu" aria-label="Меню"><span></span></button>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__collection collection">
+                <div class="collection__content">
+                    <div class="collection__container">
+                        <div class="collection__body">
+                            <h4 class="collection__subtitle">T-shirt / Tops</h4>
+                            <h1 class="collection__title">Summer Value Pack</h1>
+                            <p class="collection__text">cool / colorful / comfy</p>
+                            <a href="#" class="collection__link">Shop Now</a>
+                        </div>
+                        <div class="collection__slider slider">
+                            <!-- <img src="img/main-img/carousel-indicators.svg" alt="indicator"> -->
+                            <a class="slider__link" href="#">
+                                <div class="slider__left"></div>
+                            </a>
+                            <a class="slider__link" href="#">
+                                <div class="slider__right"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__image">
+                    <img src="img/main-img/background-woman.webp" alt="Woman on the main banner">
+                </div>
+            </section>
+            <section class="page__adv adv">
+                <div class="adv__container">
+                    <article class="adv__item item-adv">
+                        <div class="item-adv__content">
+                            <h5 class="item-adv__sub-title">Low Price</h5>
+                            <h2 class="item-adv__title">High Coziness</h2>
+                            <p class="item-adv__text">UPTO 50% OFF</p>
+                            <a href="#" class="item-adv__link">Explore Items</a>
+                        </div>
+                        <div class="item-adv__img">
+                            <img src="img/main-img/adv-woman-1.webp" alt="advertisement">
+                        </div>
+                    </article>
+                    <div class="adv__item item-adv">
+                        <div class="item-adv__content">
+                            <h5 class="item-adv__sub-title">Beyoung Presents</h5>
+                            <h2 class="item-adv__title">Breezy Summer Style</h2>
+                            <p class="item-adv__text">UPTO 50% OFF</p>
+                            <a href="#" class="item-adv__link">Explore Items</a>
+                        </div>
+                        <div class="item-adv__img">
+                            <img src="img/main-img/adv-woman-2.webp" alt="advertisement">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__arrival arrival">
+                <div class="arrival__container">
+                    <h2 class="arrival__title title">New Arrival</h2>
+                    <div class="arrival__body">
+                        <div class="cards">
+                            <article class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-1.webp" alt="Joggers">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Knitted Joggers</a>
+                                </h4>
+                            </article>
+                            <article class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-2.webp" alt="Sleeve">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Full Sleeve</a>
+                                </h4>
+                            </article>
+                            <article class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-3.webp" alt="Shirts">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Active T-Shirts</a>
+                                </h4>
+                            </article>
+                            <article class="cards__item">
+                                <a class="cards__img" href="#">
+                                    <img src="img/main-img/arrival-4.webp" alt="Shirts">
+                                </a>
+                                <h4 class="cards__title">
+                                    <a href="#">Urban Shirts</a>
+                                </h4>
+                            </article>
+                        </div>
+                        <button class="arrival__slider-btn arrival__slider-btn--prev">
+                            <img src="img/main-img/arrow.svg" alt="Slider left">
+                        </button>
+                        <button class="arrival__slider-btn arrival__slider-btn--next">
+                            <img src="img/main-img/arrow.svg" alt="Slider right">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="page__saving saving">
+                <div class="saving__container">
+                    <h2 class="saving__title title">Big Saving Zone</h2>
+                    <div class="saving__body cards-saving">
+                        <article class="cards-saving__item">
+                            <div class="cards-saving__img">
+                                <img src="img/main-img/saving-1.webp" alt="Shirts">
+                            </div>
+                            <div class="cards-saving__content">
+                                <h3 class="cards-saving__title">Hawaiian Shirts</h3>
+                                <p class="cards-saving__label">Dress up in summer vibe</p>
+                                <p class="cards-saving__discount">UPTO 50% OFF</p>
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down.svg" alt="arrow down">
+                                <a href="#" class="cards-saving__link">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="cards-saving__item cards-saving__item--right-2">
+                            <div class="cards-saving__img">
+                                <img src="img/main-img/saving-2.webp" alt="Shirts">
+                            </div>
+                            <div class="cards-saving__content cards-saving__content--right-2">
+                                <p class="cards-saving__limited">Limited Stock</p>
+                                <h3 class="cards-saving__title">Printed T-Shirt</h3>
+                                <p class="cards-saving__label">New Designs Every Week</p>
+                                <p class="cards-saving__discount">UPTO 40% OFF</p>
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down.svg" alt="arrow down">
+                                <a href="#" class="cards-saving__link">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="cards-saving__item cards-saving__item--right-3">
+                            <div class="cards-saving__img">
+                                <img src="img/main-img/saving-3.webp" alt="Shirts">
+                            </div>
+                            <div class="cards-saving__content cards-saving__content--right-3">
+                                <h3 class="cards-saving__title">Cargo Joggers</h3>
+                                <p class="cards-saving__label">Move with style & comfort</p>
+                                <p class="cards-saving__discount">UPTO 50% OFF</p>
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg"
+                                    alt="arrow down">
+                                <a href="#" class="cards-saving__link cards-saving__link--dark">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="cards-saving__item cards-saving__item--lower">
+                            <div class="cards-saving__img">
+                                <img src="img/main-img/saving-4.webp" alt="Shirts">
+                            </div>
+                            <div class="cards-saving__content cards-saving__content--lower">
+                                <h3 class="cards-saving__title">Urban Shirts</h3>
+                                <p class="cards-saving__label">Live In Confort</p>
+                                <p class="cards-saving__discount">FLAT 60% OFF</p>
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg"
+                                    alt="arrow down">
+                                <a href="#" class="cards-saving__link cards-saving__link--dark">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="cards-saving__item cards-saving__item--lower">
+                            <div class="cards-saving__img">
+                                <img src="img/main-img/saving-5.webp" alt="Shirts">
+                            </div>
+                            <div class="cards-saving__content cards-saving__content--lower">
+                                <h3 class="cards-saving__title">Oversized T-Shirts</h3>
+                                <p class="cards-saving__label">Street Style Icon</p>
+                                <p class="cards-saving__discount">FLAT 60% OFF</p>
+                                <img class="cards-saving__arrow" src="img/main-img/arrow-down-dark.svg"
+                                    alt="arrow down">
+                                <a href="#" class="cards-saving__link cards-saving__link--dark">SHOP NOW</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="page__fashion fashion">
+                <div class="fashion__container">
+                    <div class="fashion__left-side">
+                        <div class="fashion__content">
+                            <h1 class="fashion__title">WE MADE YOUR EVERYDAY FASHION BETTER!</h1>
+                            <p class="fashion__text">In our journey to improve everyday fashion, euphoria presents
+                                EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+                            <a href="#" class="fashion__link">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="fashion__right-side"></div>
+                </div>
+            </section>
+            <section class="page__man man">
+                <div class="man__container">
+                    <h2 class="man__title">Categories For Men</h2>
+                    <div class="man__body">
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-1.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Shirts</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-2.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Printed T-Shirts</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-3.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Plain T-Shirt</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-4.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Polo T-Shirt</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-5.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Hoodies & Sweetshirt</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-6.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Jeans</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-7.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Activewear</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-man">
+                            <a href="#">
+                                <div class="card-man__img">
+                                    <img src="img/main-img/man-card-8.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-man__body">
+                                <div class="card-man__description">
+                                    <h4 class="card-man__title"><a href="#">Boxers</a></h4>
+                                    <h6 class="card-man__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-man__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="page__woman woman">
+                <div class="woman__container">
+                    <h2 class="woman__title">Categories For Woman</h2>
+                    <div class="woman__body">
+                        <article class="card-woman">
+                            <a href="#">
+                                <div class="card-woman__img">
+                                    <img src="img/main-img/woman-card-1.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-woman__body">
+                                <div class="card-woman__description">
+                                    <h4 class="card-woman__title"><a href="#">Hoodies & Sweetshirt</a></h4>
+                                    <h6 class="card-woman__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-woman__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-woman">
+                            <a href="#">
+                                <div class="card-woman__img">
+                                    <img src="img/main-img/woman-card-2.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-woman__body">
+                                <div class="card-woman__description">
+                                    <h4 class="card-woman__title"><a href="#">Coats & Parkass</a></h4>
+                                    <h6 class="card-woman__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-woman__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-woman">
+                            <a href="#">
+                                <div class="card-woman__img">
+                                    <img src="img/main-img/woman-card-3.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-woman__body">
+                                <div class="card-woman__description">
+                                    <h4 class="card-woman__title"><a href="#">Tees & T-Shirt</a></h4>
+                                    <h6 class="card-woman__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-woman__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card-woman">
+                            <a href="#">
+                                <div class="card-woman__img">
+                                    <img src="img/main-img/woman-card-4.webp" alt="Man in Shirt">
+                                </div>
+                            </a>
+                            <div class="card-woman__body">
+                                <div class="card-woman__description">
+                                    <h4 class="card-woman__title"><a href="#">Boxers</a></h4>
+                                    <h6 class="card-woman__label"><a href="#">Explore Now!</a></h6>
+                                </div>
+                                <div class="card-woman__arrow">
+                                    <a href="#">
+                                        <img src="img/main-img/card-man-arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
