@@ -1000,18 +1000,18 @@ textarea {
   }
 }
 .fashion__left-side {
-  background: url("../img/main-img/trees.webp") no-repeat;
-  padding: 183px 74px 174px 74px;
+  background: url("../img/main-img/trees.webp") 0 0/100% 100% no-repeat;
+  padding: 183px 74px 150px 74px;
   border-radius: 10px;
 }
 @media (max-width: 1199.98px) {
   .fashion__left-side {
-    padding: 150px 74px 174px 74px;
+    padding: 150px 74px 150px 74px;
   }
 }
 @media (max-width: 990.98px) {
   .fashion__left-side {
-    padding: 120px 74px 174px 74px;
+    padding: 120px 74px 150px 74px;
   }
 }
 .fashion__content {
@@ -1051,7 +1051,7 @@ textarea {
   }
 }
 .fashion__right-side {
-  background: url("../img/main-img/people.webp") no-repeat;
+  background: url("../img/main-img/people.webp") 0 0/100% 100% no-repeat;
   border-radius: 10px;
 }
 @media (max-width: 767.98px) {
@@ -1156,6 +1156,9 @@ textarea {
     text-decoration: underline;
   }
 }
+.woman__container {
+  margin-bottom: 100px;
+}
 .card-woman__title {
   color: #191919;
   font-size: 17.875px;
@@ -1167,4 +1170,85 @@ textarea {
   .card-woman__title > a:hover {
     text-decoration: underline;
   }
+}
+@media (max-width: 320px) {
+  .brands__container {
+    padding-inline: 0;
+  }
+}
+.brands__content {
+  padding: 43px 123px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3c4242;
+  border-radius: 12px;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .brands__content {
+    padding: 43px 30px 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .brands__content {
+    padding: 43px 20px 60px;
+  }
+}
+.brands__title {
+  color: #fff;
+  font-family: "CoreSansC", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+.brands__text {
+  color: #fff;
+  font-family: "Causten", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 67px;
+}
+.brands__text > span {
+  color: #fbd103;
+  font-weight: 700;
+}
+
+.images-brands {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+@media (max-width: 990.98px) {
+  .images-brands {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .images-brands {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 479.98px) {
+  .images-brands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.images-brands__body {
+  max-width: 177px;
+}
+.images-brands__body img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 177/85;
+  border-radius: 12px;
 }

@@ -965,15 +965,15 @@ $smallMobile: 320px;
     // .fashion__left-side
 
     &__left-side {
-        background: url("../img/main-img/trees.webp") no-repeat;
-        padding: 183px 74px 174px 74px;
+        background: url("../img/main-img/trees.webp") 0 0 / 100% 100% no-repeat;
+        padding: 183px 74px 150px 74px;
         border-radius: 10px;
 
         @media (max-width: $pc) {
-            padding: 150px 74px 174px 74px;
+            padding: 150px 74px 150px 74px;
         }
         @media (max-width: $tablet) {
-            padding: 120px 74px 174px 74px;
+            padding: 120px 74px 150px 74px;
         }
         // @media (max-width: $bigMobile) {
         //     padding: 70px 45px 70px 45px;
@@ -1025,7 +1025,7 @@ $smallMobile: 320px;
     // .fashion__right-side
 
     &__right-side {
-        background: url("../img/main-img/people.webp") no-repeat;
+        background: url("../img/main-img/people.webp") 0 0 / 100% 100% no-repeat;
         border-radius: 10px;
 
         @media (max-width: $bigMobile) {
@@ -1165,6 +1165,7 @@ $smallMobile: 320px;
 
     &__container {
         @extend .man__container;
+        margin-bottom: 100px;
     }
 
     // .woman__title
@@ -1226,5 +1227,92 @@ $smallMobile: 320px;
 
     &__arrow {
         @extend .card-man__arrow;
+    }
+}
+
+.page {
+    // .page__brands
+
+    &__brands {
+    }
+}
+.brands {
+    // .brands__container
+
+    &__container {
+        @media (max-width: $smallMobile) {
+            padding-inline: 0;
+        }
+    }
+
+    &__content {
+        padding: 43px 123px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #3c4242;
+        border-radius: 12px;
+        text-align: center;
+
+        @media (max-width: $bigMobile) {
+            padding: 43px 30px 60px;
+        }
+        @media (max-width: $bigMobile) {
+            padding: 43px 20px 60px;
+        }
+    }
+
+    // .brands__title
+
+    &__title {
+        color: #fff;
+        font-family: "CoreSansC", sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 25px;
+    }
+
+    // .brands__text
+
+    &__text {
+        color: #fff;
+        font-family: "Causten", sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 67px;
+
+        > span {
+            color: #fbd103;
+            font-weight: 700;
+        }
+    }
+}
+.images-brands {
+    // display: flex;
+    // column-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+
+    @media (max-width: $tablet) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: $bigMobile) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: $mediumMobile) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__body {
+        max-width: 177px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 177 / 85;
+            border-radius: 12px;
+        }
     }
 }
