@@ -1,21 +1,21 @@
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 a {
-	display: inline-block;
-	text-decoration: none;
-	color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
 }
 li {
-	list-style: none;
+    list-style: none;
 }
 img {
-	vertical-align: top;
+    vertical-align: top;
 }
 h1,
 h2,
@@ -23,37 +23,45 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+    font-weight: inherit;
+    font-size: inherit;
 }
 html,
 body {
-	line-height: 1;
-	height: 100%;
+    line-height: 1;
+    height: 100%;
 }
 
 /* FORM */
 input,
 button,
 textarea {
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 button {
-	color: inherit;
-	background-color: transparent;
+    color: inherit;
+    background-color: transparent;
 }
 button,
 select,
 option {
-	cursor: pointer;
+    cursor: pointer;
 }
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/* Прибираємо стандартний маркер Chrome */
+details > summary::-webkit-details-marker {
+    display: none;
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+    list-style: none;
 }
