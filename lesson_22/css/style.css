@@ -1797,10 +1797,12 @@ body {
   max-height: 26.75rem;
   position: relative;
   overflow: hidden;
+}
+.article-post__img a {
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
 }
-.article-post__img::after {
+.article-post__img a::after {
   content: "Read more";
   padding-top: 14.375rem;
   color: #fff;
@@ -1814,7 +1816,7 @@ body {
   left: 100%;
 }
 @media (any-hover: hover) {
-  .article-post__img:hover .article-post__img::after {
+  .article-post__img a:hover .article-post__img a::after {
     left: 0;
   }
 }
