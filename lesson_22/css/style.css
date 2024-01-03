@@ -342,7 +342,7 @@ body {
             align-items: center;
   }
 }
-.contacts-header__time > a {
+.contacts-header__time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +350,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.contacts-header__time > a::before {
+.contacts-header__time::before {
   content: "";
   background: url("../img/header-img/clock.svg") no-repeat;
   -webkit-box-flex: 0;
@@ -361,7 +361,7 @@ body {
   margin-right: 0.2857142857em;
 }
 @media (any-hover: hover) {
-  .contacts-header__time > a:hover {
+  .contacts-header__time:hover {
     text-decoration: underline;
   }
 }

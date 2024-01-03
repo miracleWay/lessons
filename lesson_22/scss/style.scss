@@ -192,21 +192,19 @@ body {
     // .contacts-header__time
 
     &__time {
-        > a {
-            display: flex;
-            align-items: center;
-            &::before {
-                content: "";
-                background: url("../img/header-img/clock.svg") no-repeat;
-                flex: 0 1 toRem(17);
-                width: toRem(17);
-                height: toRem(17);
-                margin-right: toEm(4, 14);
-            }
-            @media (any-hover: hover) {
-                &:hover {
-                    text-decoration: underline;
-                }
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            background: url("../img/header-img/clock.svg") no-repeat;
+            flex: 0 1 toRem(17);
+            width: toRem(17);
+            height: toRem(17);
+            margin-right: toEm(4, 14);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
