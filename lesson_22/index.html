@@ -84,7 +84,7 @@
                         <form action="#" method="GET" enctype="multipart/form-data">
                             <button type="button" class="header__btn btn">Get Consulting</button>
                         </form>
-                        <button type="menu" class="icon-menu"><span></span></button>
+                        <button type="button" class="icon-menu" aria-label="menu button"><span></span></button>
                     </div>
                 </div>
             </div>
@@ -373,18 +373,19 @@
                         <h2 class="business-article__title">Get Free Business Appointment</h2>
                         <form enctype="multipart/form-data" method="GET" action="#" class="business-article__form">
                             <div class="business-article__name-input"><input tabindex="1" required name="yourName"
-                                    type="text" placeholder="Your name"></div>
+                                    type="text" placeholder="Your name" aria-label="type your name"></div>
                             <div class="business-article__email-input"><input tabindex="2" required name="email"
-                                    type="email" placeholder="Email Address"></div>
+                                    type="email" placeholder="Email Address" aria-label="type your email"></div>
                             <div class="business-article__phone-input"><input tabindex="3" required name="phone"
-                                    type="tel" placeholder="Phone Number"></div>
+                                    type="tel" placeholder="Phone Number" aria-label="type your phone number"></div>
                             <div class="business-article__body-form">
-                                <input tabindex="4" required name="date" type="date">
-                                <input tabindex="5" name="time" type="time">
+                                <input tabindex="4" required name="date" type="date" aria-label="choose a date">
+                                <input tabindex="5" name="time" type="time" aria-label="choose a time">
                             </div>
                             <div class="business-article__textarea"><textarea tabindex="6" name="description"
-                                    placeholder="Service Description"></textarea></div>
-                            <button class="business-article__btn btn" tabindex="7" type="submit">Submit</button>
+                                    placeholder="Service Description" aria-label="type description"></textarea></div>
+                            <button class="business-article__btn btn" tabindex="7" type="submit"
+                                aria-label="submit button">Submit</button>
                         </form>
                     </article>
                 </div>
@@ -577,7 +578,8 @@
                         <h5 class="body-footer__title">Subscribe</h5>
                         <p class="body-footer__text">Join Our Mailing List & to get our news.</p>
                         <form method="GET" enctype="multipart/form-data" action="#" class="body-footer__form">
-                            <input type="email" placeholder="your email address" required name="email">
+                            <input type="email" placeholder="your email address" required name="email"
+                                aria-label="type your email">
                             <button class="btn" type="submit">Subscribe</button>
                         </form>
                     </div>
