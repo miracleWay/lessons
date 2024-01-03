@@ -1936,7 +1936,7 @@ body {
         font-size: toRem(30);
         font-weight: 600;
         line-height: 127%; /* 38.1px */
-        margin-bottom: toREm(13, 30);
+        margin-bottom: toEm(13, 30);
 
         @media (any-hover: hover) {
             a:hover {

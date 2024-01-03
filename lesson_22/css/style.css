@@ -1914,7 +1914,7 @@ body {
   font-size: 1.875rem;
   font-weight: 600;
   line-height: 127%; /* 38.1px */
-  margin-bottom: toREm(13, 30);
+  margin-bottom: 0.4333333333em;
 }
 @media (any-hover: hover) {
   .article-post__title a:hover {
