@@ -232,7 +232,7 @@
                                 <img src="img/main-img/insurance-main.svg" alt="Logo Financial">
                             </div>
                         </article>
-                        <a href="#" class="item-solution__btn btn">More Services</a>
+                        <a href="#" class="solutions-section__btn btn">More Services</a>
                     </div>
                 </div>
             </section>
@@ -380,10 +380,8 @@
                             <div class="business-article__phone-input"><input tabindex="3" required name="phone"
                                     type="tel" placeholder="Phone Number"></div>
                             <div class="business-article__body-form">
-                                <div class="business-article__date-input"><input tabindex="4" required name="date"
-                                        type="date" placeholder="Date"></div>
-                                <div class="business-article__time-input"><input tabindex="5" name="time" type="time">
-                                </div>
+                                <input tabindex="4" required name="date" type="date" placeholder="Date">
+                                <input tabindex="5" name="time" type="time">
                             </div>
                             <div class="business-article__textarea"><textarea tabindex="6" name="description"
                                     placeholder="Service Description"></textarea></div>
@@ -409,11 +407,9 @@
                     <div class="posts-section__body">
                         <article class="article-post">
                             <div class="article-post__card">
-                                <div class="article-post__img">
-                                    <a href="#">
-                                        <img src="img/main-img/laptop-posts.webp" alt="Main image of the post">
-                                    </a>
-                                </div>
+                                <a class="article-post__img" href="#">
+                                    <img src="img/main-img/laptop-posts.webp" alt="Main image of the post">
+                                </a>
                                 <div class="article-post__wrapper">
                                     <p class="article-post__date"><a href="#">April 13/ 2021</a></p>
                                     <p class="article-post__author"><a href="#">Miranda Doe</a></p>
@@ -432,11 +428,9 @@
                         </article>
                         <article class="article-post">
                             <div class="article-post__card">
-                                <div class="article-post__img">
-                                    <a href="#">
-                                        <img src="img/main-img/woman-posts.webp" alt="Main image of the post">
-                                    </a>
-                                </div>
+                                <a class="article-post__img" href="#">
+                                    <img src="img/main-img/woman-posts.webp" alt="Main image of the post">
+                                </a>
                                 <div class="article-post__wrapper">
                                     <p class="article-post__date"><a href="#">April 13/ 2021</a></p>
                                     <p class="article-post__author"><a href="#">Miranda Doe</a></p>
@@ -456,8 +450,154 @@
                     </div>
                 </div>
             </section>
+            <section class="page__subscribe subscribe-section">
+                <div class="subscribe-section__container">
+                    <div class="subscribe-section__content">
+                        <h5 class="subscribe-section__subtitle">Subscribe Whitecollar</h5>
+                        <h2 class="subscribe-section__title">Need An Experienced <span>Whitecollar</span> job Service?
+                            Contact Us</h2>
+                        <p class="subscribe-section__text">Leverage agile frameworks to provide a robust synopsis for
+                            high
+                            level overviews.Iterative approaches to corporate strategy foster collaborative
+                            thinkingfurther
+                            the overal.</p>
+                        <a href="#" class="subscribe-section__link btn">Get Started</a>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__container">
+                <section class="footer__head head-footer">
+                    <div class="head-footer__logo">
+                        <img src="img/footer-img/logo.webp" alt="Logo">
+                    </div>
+                    <address class="head-footer__address">
+                        <div class="head-footer__item">
+                            <div class="head-footer__img">
+                                <img src="img/main-img/phone-icon.svg" alt="Phone icon">
+                            </div>
+                            <div class="head-footer__content">
+                                <h4 class="head-footer__title">Call Us</h4>
+                                <a href="tel:+01569896654" class="head-footer__text">+01 569 896 654</a>
+                            </div>
+                        </div>
+                        <div class="head-footer__item">
+                            <div class="head-footer__img">
+                                <img src="img/main-img/mail-icon.svg" alt="Mail icon">
+                            </div>
+                            <div class="head-footer__content">
+                                <h4 class="head-footer__title">Mail Us</h4>
+                                <a href="mailto:Info@Example.com" class="head-footer__text">Info@Example.com</a>
+                            </div>
+                        </div>
+                        <div class="head-footer__item">
+                            <div class="head-footer__img">
+                                <img src="img/main-img/gps-icon.svg" alt="GPS icon">
+                            </div>
+                            <div class="head-footer__content">
+                                <h4 class="head-footer__title">Location</h4>
+                                <a href="#" class="head-footer__text">Amsterdam, 109-74</a>
+                            </div>
+                        </div>
+                    </address>
+                </section>
+                <section class="footer__body body-footer">
+                    <div class="body-footer__faq">
+                        <div class="body-footer__wrap">
+                            <h5 class="body-footer__subtitle">Quick Link</h5>
+                            <ul class="body-footer__list">
+                                <li class="body-footer__item"><a href="#">Home</a></li>
+                                <li class="body-footer__item"><a href="#"><span>About Us</span></a></li>
+                                <li class="body-footer__item"><a href="#">Blog</a></li>
+                                <li class="body-footer__item"><a href="#">Services</a></li>
+                                <li class="body-footer__item"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="body-footer__wrap">
+                            <h5 class="body-footer__subtitle">Our Services</h5>
+                            <ul class="body-footer__list">
+                                <li class="body-footer__item"><a href="#">Financial Consulting</a></li>
+                                <li class="body-footer__item"><a href="#">Business Management</a></li>
+                                <li class="body-footer__item"><a href="#">Consultant & Programgs</a></li>
+                                <li class="body-footer__item"><a href="#">Company Management</a></li>
+                                <li class="body-footer__item"><a href="#">Insurance & Finance</a></li>
+                            </ul>
+                        </div>
+                        <div class="body-footer__wrap">
+                            <h5 class="body-footer__subtitle">Uitility Page</h5>
+                            <ul class="body-footer__list">
+                                <li class="body-footer__item"><a href="#">Style Guide </a></li>
+                                <li class="body-footer__item"><a href="#">Licenses</a></li>
+                                <li class="body-footer__item"><a href="#">Instructions</a></li>
+                                <li class="body-footer__item"><a href="#">Changelog</a></li>
+                                <li class="body-footer__item"><a href="#">404 Page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="body-footer__details">
+                        <details>
+                            <summary>
+                                <h5 class="body-footer__subtitle">Quick Link</h5>
+                            </summary>
+                            <ul class="body-footer__list">
+                                <li class="body-footer__item"><a href="#">Home</a></li>
+                                <li class="body-footer__item"><a href="#"><span>About Us</span></a></li>
+                                <li class="body-footer__item"><a href="#">Blog</a></li>
+                                <li class="body-footer__item"><a href="#">Services</a></li>
+                                <li class="body-footer__item"><a href="#">Contact</a></li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>
+                                <h5 class="body-footer__subtitle">Our Services</h5>
+                            </summary>
+                            <ul class="body-footer__list">
+                                <li class="body-footer__item"><a href="#">Financial Consulting</a></li>
+                                <li class="body-footer__item"><a href="#">Business Management</a></li>
+                                <li class="body-footer__item"><a href="#">Consultant & Programgs</a></li>
+                                <li class="body-footer__item"><a href="#">Company Management</a></li>
+                                <li class="body-footer__item"><a href="#">Insurance & Finance</a></li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>
+                                <h5 class="body-footer__subtitle">Uitility Page</h5>
+                            </summary>
+                            <ul class="body-footer__list">
+                                <li class="body-footer__item"><a href="#">Home</a></li>
+                                <li class="body-footer__item"><a href="#"><span>About Us</span></a></li>
+                                <li class="body-footer__item"><a href="#">Blog</a></li>
+                                <li class="body-footer__item"><a href="#">Services</a></li>
+                                <li class="body-footer__item"><a href="#">Contact</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="body-footer__subscribe">
+                        <h5 class="body-footer__title">Subscribe</h5>
+                        <p class="body-footer__text">Join Our Mailing List & to get our news.</p>
+                        <form method="GET" enctype="multipart/form-data" action="#" class="body-footer__form">
+                            <input type="email" placeholder="your email address" required name="email">
+                            <button class="btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </section>
+                <section class="footer__foot foot-footer">
+                    <p class="foot-footer__text">Copyright © <span style="color: #40DDB6;">WhiteCollar</span> | Designed
+                        by
+                        <span style="color: #6B77E5;">VictorFlow</span> Templates - Powered by Webflow
+                    </p>
+                    <address class="foot-footer__address">
+                        <span>Follow :</span>
+                        <a href="#"><img src="img/header-img/insta.svg" alt="Insta Icon"></a>
+                        <a href="#"><img src="img/header-img/facebook.svg" alt="Facebook Icon"></a>
+                        <a href="#"><img src="img/header-img/twitter.svg" alt="Twitter Icon"></a>
+                        <a href="#"><img src="img/header-img/pinterest.svg" alt="Pinterest Icon"></a>
+                    </address>
+                </section>
+            </div>
+        </footer>
     </div>
     <script src="js/script.js"></script>
 </body>
