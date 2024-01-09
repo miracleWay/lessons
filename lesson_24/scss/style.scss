@@ -1,0 +1,38 @@
+// Бібліотека математичних функцій
+@use "sass:math";
+// Обнулення стилів
+@import "_reset.scss";
+// Шрифти
+@import "_fonts.scss";
+// Компоненти
+@import "_common.scss";
+// Функції
+@import "_functions.scss";
+
+$mainColor: #3c4242;
+$pc: toEm(1199.98);
+$tablet: toEm(990.98);
+$bigMobile: toEm(767.98);
+$mediumMobile: toEm(479.98);
+$smallMobile: toEm(320);
+
+.wrapper {
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.wrapper main {
+    flex-grow: 1;
+    padding-top: toRem(194);
+}
+
+[class*="__container"] {
+    max-width: toRem(1250);
+    padding-inline: toRem(15);
+    margin: 0 auto;
+}
+
+body {
+    background-color: gray;
+}
